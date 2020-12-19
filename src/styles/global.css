@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .z-none {
+    z-index: -1;
+  }
+
+  /* TODO: Add variety of blurs to create hierarchy */
+
+  .bg-blur {
+    backdrop-filter: blur(0.25rem);
+  }
+}
