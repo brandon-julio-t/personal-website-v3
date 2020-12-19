@@ -10,7 +10,7 @@ export default class ParticleSystem {
   private readonly PARTICLES_COUNT: number;
   private readonly MIN_PARTICLE_SIZE: number = 2;
   private readonly MAX_PARTICLE_SIZE: number = 4;
-  private readonly PARTICLE_SPEED: number = 2;
+  private readonly PARTICLE_SPEED: number = 1;
 
   private readonly particles: Particle[];
   private readonly ctx: OffscreenCanvasRenderingContext2D;

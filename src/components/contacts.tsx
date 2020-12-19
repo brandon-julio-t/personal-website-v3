@@ -9,7 +9,8 @@ import {
   faLinkedin,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
-import { OutboundLink } from "gatsby-plugin-google-analytics";
+
+import ExternalLink from "./external-link";
 
 export default function Contacts() {
   return (
@@ -17,48 +18,24 @@ export default function Contacts() {
       <a href="mailto:brandon.julio.t@icloud.com">
         <FontAwesomeIcon icon={faEnvelope} size="2x" />
       </a>
-      <OutboundLink
-        href="https://www.facebook.com/profile.php?id=100008724798107"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      <ExternalLink href="https://www.facebook.com/profile.php?id=100008724798107">
         <FontAwesomeIcon icon={faFacebook} size="2x" />
-      </OutboundLink>
-      <OutboundLink
-        href="https://www.freecodecamp.org/brandon-julio-thenaro"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      </ExternalLink>
+      <ExternalLink href="https://www.freecodecamp.org/brandon-julio-thenaro">
         <FontAwesomeIcon icon={faFreeCodeCamp} size="2x" />
-      </OutboundLink>
-      <OutboundLink
-        href="https://github.com/brandon-julio-t"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      </ExternalLink>
+      <ExternalLink href="https://github.com/brandon-julio-t">
         <FontAwesomeIcon icon={faGithub} size="2x" />
-      </OutboundLink>
-      <OutboundLink
-        href="https://www.instagram.com/brandon.julio.t"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      </ExternalLink>
+      <ExternalLink href="https://www.instagram.com/brandon.julio.t">
         <FontAwesomeIcon icon={faInstagram} size="2x" />
-      </OutboundLink>
-      <OutboundLink
-        href="https://www.linkedin.com/in/brandonjuliothenaro"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      </ExternalLink>
+      <ExternalLink href="https://www.linkedin.com/in/brandonjuliothenaro">
         <FontAwesomeIcon icon={faLinkedin} size="2x" />
-      </OutboundLink>
-      <OutboundLink
-        href="https://twitter.com/brandon_julio_t"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      </ExternalLink>
+      <ExternalLink href="https://twitter.com/brandon_julio_t">
         <FontAwesomeIcon icon={faTwitter} size="2x" />
-      </OutboundLink>
+      </ExternalLink>
     </>
   );
 }

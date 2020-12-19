@@ -5,42 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2517414b-e27d-4487-a2b7-de1f97bfb6b8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/contacts.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/images/angkatan.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/images/apis-and-microservices.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/images/front-end-libraries.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/images/java-basic.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/images/javascript-algorithms-and-data-structures.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/images/javascript-basic.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/images/react-basic.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/images/responsive-web-design.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/images/rest-api.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/images/tokopedia-start-summit.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/images/typing-speed.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/APIs and Microservices.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/Angkatan.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/Front End Libraries.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/Java (Basic).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/JavaScript (Basic).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/JavaScript Algorithms and Data Structures.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/React (Basic).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/Responsive Web Design.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/Rest API.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/Tokopedia START Summit.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/Typing Speed.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/cv.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/particle-system/coordinate.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/particle-system/particle-system.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/particle-system/particle.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/particle-system/rgb.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/particle-system/utilities.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/particle-system/vector.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/external-link.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/footer.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/particle-system-canvas.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/seo.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/contacts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/contacts.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/global.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/particle-system/particle-system.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/particle-system/particle-system.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,6 +55,9 @@
       <recent name="D:\GitHub\personal-website-v3\src\components\images" />
       <recent name="D:\GitHub\personal-website-v3\src\images" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\GitHub\personal-website-v3\src\components" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -91,7 +67,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608366355916</updated>
-      <workItem from="1608366362675" duration="22106000" />
+      <workItem from="1608366362675" duration="22565000" />
+      <workItem from="1608413017652" duration="2700000" />
     </task>
     <servers />
   </component>
@@ -108,6 +85,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

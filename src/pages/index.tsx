@@ -1,7 +1,6 @@
 import * as React from "react";
 import { useState } from "react";
 import { useInterval } from "rooks";
-import { OutboundLink } from "gatsby-plugin-google-analytics";
 
 import Angkatan from "../components/images/angkatan";
 import APIsAndMicroservices from "../components/images/apis-and-microservices";
@@ -15,6 +14,7 @@ import RestAPI from "../components/images/rest-api";
 import TokopediaSTARTSummit from "../components/images/tokopedia-start-summit";
 import TypingSpeed from "../components/images/typing-speed";
 import Contacts from "../components/contacts";
+import ExternalLink from "../components/external-link";
 
 export default function Index() {
   const certificates = [
@@ -57,7 +57,7 @@ export default function Index() {
           <br />
           <small>A.K.A.</small>
           <br />
-          BR20-2
+          <span title="T088">BR20-2</span>
         </h1>
 
         <h2 className="text-2xl">
@@ -154,33 +154,38 @@ export default function Index() {
             </section>
           </div>
         </section>
+
         <section>
-          <h2 className="text-5xl text-center">20-2</h2>
+          <h2 className="text-5xl text-center">Work Experience</h2>
 
-          <figure className="max-w-screen-md mx-auto my-8">
-            <OutboundLink href="https://www.instagram.com/slcbinusuniv">
-              <Angkatan
-                alt="20-2 assistants at Software Laboratory Center"
-                className="rounded-3xl hover:scale-105"
-              />
-            </OutboundLink>
+          <section className="flex flex-col justify-center space-y-8 my-8 max-w-screen-md mx-auto">
+            <h3 className="text-4xl text-center">Software Laboratory Center</h3>
 
-            <figcaption className="text-xl text-center italic text-gray-500 my-8">
-              — “In Honesty and Hardwork, We Strive for Excellence” —
-            </figcaption>
-          </figure>
+            <figure className="my-8">
+              <ExternalLink href="https://www.instagram.com/slcbinusuniv">
+                <Angkatan
+                  alt="20-2 assistants at Software Laboratory Center"
+                  className="rounded-3xl"
+                />
+              </ExternalLink>
+
+              <figcaption className="text-xl text-center italic text-gray-500 my-8">
+                — “In Honesty and Hardwork, We Strive for Excellence” —
+                <br />— 20-2 —
+              </figcaption>
+            </figure>
+          </section>
         </section>
-        <h2 className="text-5xl text-center">Certificates</h2>
 
-        <div className="max-w-screen-sm mx-auto my-8" style={{ height: 500 }}>
-          <OutboundLink
-            href={currentCertificate.url}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {currentCertificate.component}
-          </OutboundLink>
-        </div>
+        <section>
+          <h2 className="text-5xl text-center">Certificates</h2>
+
+          <div className="max-w-screen-sm mx-auto my-8" style={{ height: 500 }}>
+            <ExternalLink href={currentCertificate.url}>
+              {currentCertificate.component}
+            </ExternalLink>
+          </div>
+        </section>
       </main>
     </>
   );
