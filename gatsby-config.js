@@ -1,6 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: "personal-website-v3",
+    title: `Personal Website`,
+    description: `Personal website with Gatsby.js`,
+    author: `@brandon_julio_t`,
+    siteUrl: `https://www.brandonjuliothenaro.my.id`,
   },
   plugins: [
     {
@@ -13,10 +16,11 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     "gatsby-plugin-offline",
+    "gatsby-plugin-postcss",
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        icon: "src/images/icon.png",
+        icon: "src/images/icon.jpg",
       },
     },
     "gatsby-transformer-sharp",
@@ -27,6 +31,12 @@ module.exports = {
         path: "./src/images/",
       },
       __key: "images",
+    },
+    {
+      resolve: `gatsby-plugin-layout`,
+      options: {
+        component: require.resolve(`./src/components/layout.tsx`),
+      },
     },
   ],
 };
