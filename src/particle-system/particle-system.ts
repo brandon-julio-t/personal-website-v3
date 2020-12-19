@@ -59,14 +59,18 @@ export default class ParticleSystem {
       );
 
       const speed = new Vector(
-        Math.random() *
-          (randomIntegerBetween(-this.PARTICLE_SPEED, this.PARTICLE_SPEED) -
-            randomIntegerBetween(-this.PARTICLE_SPEED, this.PARTICLE_SPEED)) +
-          randomIntegerBetween(-this.PARTICLE_SPEED, this.PARTICLE_SPEED),
-        Math.random() *
-          (randomIntegerBetween(-this.PARTICLE_SPEED, this.PARTICLE_SPEED) -
-            randomIntegerBetween(-this.PARTICLE_SPEED, this.PARTICLE_SPEED)) +
-          randomIntegerBetween(-this.PARTICLE_SPEED, this.PARTICLE_SPEED)
+        Math.round(
+          Math.random() *
+            (randomIntegerBetween(-this.PARTICLE_SPEED, this.PARTICLE_SPEED) -
+              randomIntegerBetween(-this.PARTICLE_SPEED, this.PARTICLE_SPEED)) +
+            randomIntegerBetween(-this.PARTICLE_SPEED, this.PARTICLE_SPEED)
+        ),
+        Math.round(
+          Math.random() *
+            (randomIntegerBetween(-this.PARTICLE_SPEED, this.PARTICLE_SPEED) -
+              randomIntegerBetween(-this.PARTICLE_SPEED, this.PARTICLE_SPEED)) +
+            randomIntegerBetween(-this.PARTICLE_SPEED, this.PARTICLE_SPEED)
+        )
       ); // try hard to prevent 0 speed
 
       const color = hexToRgb(randomHexColor());

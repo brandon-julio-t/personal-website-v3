@@ -5,15 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2517414b-e27d-4487-a2b7-de1f97bfb6b8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/external-link.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/footer.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/particle-system-canvas.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/seo.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/contacts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/contacts.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/particle-system-canvas.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/particle-system-canvas.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/seo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/seo.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/particle-system/particle-system.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/particle-system/particle-system.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/global.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +66,7 @@
       <option name="presentableId" value="Default" />
       <updated>1608366355916</updated>
       <workItem from="1608366362675" duration="22565000" />
-      <workItem from="1608413017652" duration="2700000" />
+      <workItem from="1608413017652" duration="3704000" />
     </task>
     <servers />
   </component>
