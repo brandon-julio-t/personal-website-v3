@@ -8,9 +8,7 @@ import ExternalLink from "../external-link";
 export default function Footer() {
   return (
     <footer className="mb-32 text-center">
-      <section className="mx-auto max-w-screen-sm flex flex-wrap justify-around my-8">
-        <Contacts />
-      </section>
+      <Contacts />
 
       <section className="flex flex-col space-y-4">
         <p>

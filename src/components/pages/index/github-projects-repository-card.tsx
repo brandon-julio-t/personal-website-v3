@@ -21,6 +21,7 @@ export default function GithubProjectsRepositoryCard(props) {
       month: "long",
       year: "numeric",
     }).format(new Date(dateString));
+
   return (
     <div className="rounded-3xl border border-gray-400 border-opacity-40 px-8 py-4 hover:border-opacity-60 hover:shadow hover:bg-blur transition-all duration-300">
       <h3 className="text-lg font-bold">{toTitleCase(repository.name)}</h3>
@@ -33,13 +34,13 @@ export default function GithubProjectsRepositoryCard(props) {
       </div>
 
       <ExternalLink href={repository.url} className="hover:underline">
-        <FontAwesomeIcon icon={faGithub} /> View on GitHub
+        <FontAwesomeIcon icon={faGithub} role="img" /> View on GitHub
       </ExternalLink>
 
       <br />
 
       <ExternalLink href={repository.homepageUrl} className="hover:underline">
-        <FontAwesomeIcon icon={faGlobe} /> View Live
+        <FontAwesomeIcon icon={faGlobe} role="img" /> View Live
       </ExternalLink>
 
       <p className="text-base italic my-2">{repository.description}</p>

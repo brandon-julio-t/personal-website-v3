@@ -18,9 +18,7 @@ export default function Hero() {
         Lifelong learner | Web Developer <br /> Since 2019
       </h2>
 
-      <section className="w-full max-w-screen-sm flex justify-around">
-        <Contacts />
-      </section>
+      <Contacts />
 
       <HeroScrollDownIndicator />
     </header>
