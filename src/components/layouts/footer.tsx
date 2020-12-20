@@ -37,7 +37,7 @@ export default function Footer() {
         </p>
 
         <div className="w-32 mx-auto">
-          <ExternalLink href="https://www.gatsbyjs.com/">
+          <ExternalLink href="https://www.gatsbyjs.com/" aria-label="Gatsby">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 106 28"
@@ -58,7 +58,7 @@ export default function Footer() {
         </div>
 
         <div className="w-32 mx-auto">
-          <ExternalLink href="https://tailwindcss.com/">
+          <ExternalLink href="https://tailwindcss.com/" aria-label="TailwindCSS">
             <svg viewBox="0 0 247 31">
               <path
                 fillRule="evenodd"
@@ -77,7 +77,7 @@ export default function Footer() {
         </div>
 
         <div className="w-32 mx-auto">
-          <ExternalLink href="https://www.netlify.com/">
+          <ExternalLink href="https://www.netlify.com/" aria-label="Netlify">
             <svg viewBox="0 0 114 51" version="1.1">
               <title>netlify-callout-vertical-color-accent</title>
               <desc>Created with Sketch.</desc>
