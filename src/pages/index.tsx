@@ -7,13 +7,11 @@ import GithubProjects from "../components/pages/index/github-projects";
 
 export default function Index() {
   return (
-    <>
+    <main>
       <Hero />
-      <main>
-        <GithubProjects />
-        <TechnologyStack />
-        <Certificate />
-      </main>
-    </>
+      <GithubProjects />
+      <TechnologyStack />
+      <Certificate />
+    </main>
   );
 }
