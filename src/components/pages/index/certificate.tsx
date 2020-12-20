@@ -16,19 +16,56 @@ import TypingSpeed from "../../images/typing-speed";
 
 export default function Certificate() {
   const certificates = [
-    { component: <APIsAndMicroservices />, url: "https://bit.ly/301Cvx8" },
-    { component: <FrontEndLibraries />, url: "https://bit.ly/2YTCNpg" },
-    { component: <JavaBasic />, url: "https://bit.ly/2YjFn5V" },
     {
+      label: "Certificate APIs and Microservices",
+      component: <APIsAndMicroservices />,
+      url: "https://bit.ly/301Cvx8",
+    },
+    {
+      label: "Certificate Front End Libraries",
+      component: <FrontEndLibraries />,
+      url: "https://bit.ly/2YTCNpg",
+    },
+    {
+      label: "Certificate Java Basic",
+      component: <JavaBasic />,
+      url: "https://bit.ly/2YjFn5V",
+    },
+    {
+      label: "Certificate JavaScript Algorithms and Data Structures",
       component: <JavaScriptAlgorithmsAndDataStructures />,
       url: "https://bit.ly/3dA7eFe",
     },
-    { component: <JavaScriptBasic />, url: "https://bit.ly/2UpwkQ0" },
-    { component: <ReactBasic />, url: "https://bit.ly/2MK8kmd" },
-    { component: <ResponsiveWebDesign />, url: "https://bit.ly/35OoTpT" },
-    { component: <RestAPI />, url: "https://bit.ly/2Oh4RMV" },
-    { component: <TokopediaSTARTSummit />, url: "https://bit.ly/2xPxg83" },
-    { component: <TypingSpeed />, url: "https://bit.ly/2WH3M4U" },
+    {
+      label: "Certificate JavaScript Basic",
+      component: <JavaScriptBasic />,
+      url: "https://bit.ly/2UpwkQ0",
+    },
+    {
+      label: "Certificate React Basic",
+      component: <ReactBasic />,
+      url: "https://bit.ly/2MK8kmd",
+    },
+    {
+      label: "Certificate Responsive Web Design",
+      component: <ResponsiveWebDesign />,
+      url: "https://bit.ly/35OoTpT",
+    },
+    {
+      label: "Certificate Rest API",
+      component: <RestAPI />,
+      url: "https://bit.ly/2Oh4RMV",
+    },
+    {
+      label: "Certificate Tokopedia START Summit",
+      component: <TokopediaSTARTSummit />,
+      url: "https://bit.ly/2xPxg83",
+    },
+    {
+      label: "Certificate Typing Speed",
+      component: <TypingSpeed />,
+      url: "https://bit.ly/2WH3M4U",
+    },
   ];
 
   const certificateSliderInterval = 3500;
@@ -52,7 +89,10 @@ export default function Certificate() {
       <h2 className="text-5xl text-center">Certificates</h2>
 
       <div className="max-w-screen-sm mx-auto my-8" style={{ height: 500 }}>
-        <ExternalLink href={currentCertificate.url}>
+        <ExternalLink
+          href={currentCertificate.url}
+          aria-label={currentCertificate.label}
+        >
           {currentCertificate.component}
         </ExternalLink>
       </div>
