@@ -37,7 +37,7 @@ export default function GithubProjectsRepositoryCard(props) {
         <FontAwesomeIcon icon={faGithub} role="img" /> View on GitHub
       </ExternalLink>
 
-      <br />
+      <div className="my-2" />
 
       <ExternalLink href={repository.homepageUrl} className="hover:underline">
         <FontAwesomeIcon icon={faGlobe} role="img" /> View Live
