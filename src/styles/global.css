@@ -6,4 +6,22 @@
   .z-none {
     z-index: -1;
   }
+
+  @variants hover {
+      .bg-blur-sm {
+        backdrop-filter: blur(0.125rem);
+      }
+      
+      .bg-blur {
+        backdrop-filter: blur(0.25rem);
+      }
+      
+      .bg-blur-md {
+        backdrop-filter: blur(0.5rem);
+      }
+      
+      .bg-blur-lg {
+        backdrop-filter: blur(1rem);
+      }
+  }
 }

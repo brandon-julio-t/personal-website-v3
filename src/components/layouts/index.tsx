@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import ParticleSystemCanvas from "../particle-system-canvas";
+import ParticleSystemCanvas from "./particle-system-canvas";
 import Footer from "./footer";
 import SEO from "./seo";
 import { ThemeProvider } from "../../context/theme";

@@ -1,6 +1,6 @@
 import * as React from "react";
 import { useEffect, useRef } from "react";
-import ParticleSystem from "../particle-system/particle-system";
+import ParticleSystem from "../../particle-system/particle-system";
 
 export default function ParticleSystemCanvas() {
   const particleCanvas = useRef<HTMLCanvasElement>(null);
