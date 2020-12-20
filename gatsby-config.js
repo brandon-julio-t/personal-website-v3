@@ -38,5 +38,14 @@ module.exports = {
         component: require.resolve(`./src/components/layouts/index.tsx`),
       },
     },
+    {
+    resolve: `gatsby-source-github-api`,
+    options: {
+      token: process.env.GITHUB_GRAPHQL_TOKEN,
+      graphQLQuery: JSON.stringify({
+
+      }),
+    }
+  }
   ],
 };
