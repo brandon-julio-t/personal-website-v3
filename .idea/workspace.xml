@@ -5,13 +5,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2517414b-e27d-4487-a2b7-de1f97bfb6b8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.prettierignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/index/github-projects-language-pill.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/index/github-projects-repository-card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.development" beforeDir="false" afterPath="$PROJECT_DIR$/.env.development" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.production" beforeDir="false" afterPath="$PROJECT_DIR$/.env.production" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatsby-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postcss.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/postcss.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/contacts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/contacts.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/particle-system-canvas.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/particle-system-canvas.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/seo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/seo.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/external-link.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/external-link.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layouts/footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layouts/footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layouts/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layouts/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layouts/particle-system-canvas.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layouts/particle-system-canvas.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layouts/seo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layouts/seo.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/index/certificate.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/index/certificate.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/index/curriculum-vitae.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/index/github-projects.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/index/github-projects.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/index/hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/index/hero.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/index/technology-stack.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/index/technology-stack.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/index/work-experience.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/index/work-experience.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/context/theme.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/theme.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/particle-system/particle-system.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/particle-system/particle-system.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/particle-system/particle.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/particle-system/particle.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/global.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +90,7 @@
       <updated>1608366355916</updated>
       <workItem from="1608366362675" duration="22565000" />
       <workItem from="1608413017652" duration="3704000" />
+      <workItem from="1608458686036" duration="2558000" />
     </task>
     <servers />
   </component>

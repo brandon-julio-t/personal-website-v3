@@ -12,7 +12,8 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "format": "prettier --write ."
   },
   "license": "0BSD",
   "dependencies": {
@@ -20,7 +21,6 @@
     "@fortawesome/free-brands-svg-icons": "^5.15.1",
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
     "@fortawesome/react-fontawesome": "^0.1.13",
-    "@loadable/component": "^5.14.1",
     "autoprefixer": "^10.1.0",
     "gatsby": "^2.26.1",
     "gatsby-image": "^2.8.0",
@@ -36,6 +36,7 @@
     "gatsby-source-github-api": "^0.2.1",
     "gatsby-transformer-sharp": "^2.9.0",
     "postcss": "^8.2.1",
+    "prettier": "^2.2.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0",

@@ -44,7 +44,7 @@ export default class Particle {
     const isGoingDown = vY > 0;
 
     if (edgeX > width + centerDelta && isGoingRight) {
-      this.position.x = centerDelta;
+      this.position.x = -centerDelta;
     }
 
     if (edgeX < centerDelta && isGoingLeft) {
@@ -52,7 +52,7 @@ export default class Particle {
     }
 
     if (edgeY > height + centerDelta && isGoingDown) {
-      this.position.y = centerDelta;
+      this.position.y = -centerDelta;
     }
 
     if (edgeY < centerDelta && isGoingUp) {

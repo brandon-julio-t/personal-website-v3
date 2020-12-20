@@ -58,7 +58,10 @@ export default function Footer() {
         </div>
 
         <div className="w-32 mx-auto">
-          <ExternalLink href="https://tailwindcss.com/" aria-label="TailwindCSS">
+          <ExternalLink
+            href="https://tailwindcss.com/"
+            aria-label="TailwindCSS"
+          >
             <svg viewBox="0 0 247 31">
               <path
                 fillRule="evenodd"
