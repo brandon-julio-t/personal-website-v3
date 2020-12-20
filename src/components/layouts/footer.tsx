@@ -2,8 +2,8 @@ import * as React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faReact } from "@fortawesome/free-brands-svg-icons";
 
-import Contacts from "./contacts";
-import ExternalLink from "./external-link";
+import Contacts from "../contacts";
+import ExternalLink from "../external-link";
 
 export default function Footer() {
   return (

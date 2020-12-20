@@ -14,7 +14,7 @@ export default function ParticleSystemCanvas() {
   return (
     <canvas
       ref={particleCanvas}
-      className="w-screen h-screen fixed z-none opacity-50"
+      className="w-screen h-screen fixed z-none opacity-30"
     />
   );
 }

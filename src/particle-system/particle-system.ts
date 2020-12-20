@@ -8,9 +8,8 @@ export default class ParticleSystem {
 
   private readonly FPS: number = 60;
   private readonly PARTICLES_COUNT: number;
-  private readonly MIN_PARTICLE_SIZE: number = 2;
-  private readonly MAX_PARTICLE_SIZE: number = 4;
-  private readonly PARTICLE_SPEED: number = 1;
+  private readonly MIN_PARTICLE_SIZE: number = 1;
+  private readonly MAX_PARTICLE_SIZE: number = 5;
 
   private readonly particles: Particle[];
   private readonly ctx: OffscreenCanvasRenderingContext2D;
@@ -59,19 +58,9 @@ export default class ParticleSystem {
       );
 
       const speed = new Vector(
-        Math.round(
-          Math.random() *
-            (randomIntegerBetween(-this.PARTICLE_SPEED, this.PARTICLE_SPEED) -
-              randomIntegerBetween(-this.PARTICLE_SPEED, this.PARTICLE_SPEED)) +
-            randomIntegerBetween(-this.PARTICLE_SPEED, this.PARTICLE_SPEED)
-        ),
-        Math.round(
-          Math.random() *
-            (randomIntegerBetween(-this.PARTICLE_SPEED, this.PARTICLE_SPEED) -
-              randomIntegerBetween(-this.PARTICLE_SPEED, this.PARTICLE_SPEED)) +
-            randomIntegerBetween(-this.PARTICLE_SPEED, this.PARTICLE_SPEED)
-        )
-      ); // try hard to prevent 0 speed
+          Math.random() * Math.round(Math.random()) ? 1 : -1,
+          Math.random() * Math.round(Math.random()) ? 1 : -1
+        ); // try hard to prevent 0 speed
 
       const color = hexToRgb(randomHexColor());
 
