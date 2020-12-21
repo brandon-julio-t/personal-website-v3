@@ -30,7 +30,6 @@ export default class ParticleSystem {
     this.particles = [];
 
     this.fillParticles();
-    this.handleWindowResize();
     this.handleMouseMove();
     this.play();
   }
@@ -63,13 +62,6 @@ export default class ParticleSystem {
 
       this.particles.push(new Particle(position, size, speed, color, this.ctx));
     }
-  }
-
-  private handleWindowResize(): void {
-    onresize = () => {
-      this.ctx.canvas.width = innerWidth;
-      this.ctx.canvas.height = innerHeight;
-    };
   }
 
   private handleMouseMove(): void {
