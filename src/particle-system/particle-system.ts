@@ -1,7 +1,7 @@
-import Particle from './particle';
-import { hexToRgb, randomHexColor, randomIntegerBetween } from './utilities';
-import Vector from './vector';
-import Coordinate from './coordinate';
+import Particle from "./particle";
+import { hexToRgb, randomHexColor, randomIntegerBetween } from "./utilities";
+import Vector from "./vector";
+import Coordinate from "./coordinate";
 
 export default class ParticleSystem {
   public static readonly MIN_LINK_DISTANCE: number = 175;
@@ -12,7 +12,9 @@ export default class ParticleSystem {
   private readonly MAX_PARTICLE_SIZE: number = 5;
 
   private readonly particles: Particle[];
-  private readonly ctx: OffscreenCanvasRenderingContext2D;
+  private readonly ctx:
+    | CanvasRenderingContext2D
+    | OffscreenCanvasRenderingContext2D;
 
   private mouseX: number;
   private mouseY: number;
@@ -25,7 +27,12 @@ export default class ParticleSystem {
 
     const { width, height } = canvas;
 
-    this.ctx = canvas.transferControlToOffscreen().getContext('2d');
+    if (canvas.transferControlToOffscreen) {
+      this.ctx = canvas.transferControlToOffscreen().getContext("2d");
+    } else {
+      this.ctx = canvas.getContext("2d");
+    }
+
     this.PARTICLES_COUNT = (width / height) * (Math.max(width, height) / 50);
     this.particles = [];
 
@@ -51,11 +58,18 @@ export default class ParticleSystem {
 
       const position = new Coordinate(x, y);
 
-      const size = randomIntegerBetween(this.MIN_PARTICLE_SIZE, this.MAX_PARTICLE_SIZE);
+      const size = randomIntegerBetween(
+        this.MIN_PARTICLE_SIZE,
+        this.MAX_PARTICLE_SIZE
+      );
 
       const speed = new Vector(
-        Math.random() * Math.round(Math.random()) ? Math.random() : -Math.random(),
-        Math.random() * Math.round(Math.random()) ? Math.random() : -Math.random()
+        Math.random() * Math.round(Math.random())
+          ? Math.random()
+          : -Math.random(),
+        Math.random() * Math.round(Math.random())
+          ? Math.random()
+          : -Math.random()
       );
 
       const color = hexToRgb(randomHexColor());
@@ -104,7 +118,7 @@ export default class ParticleSystem {
         particle.linkToCoordinate(mouseCoordinate);
       }
 
-      this.particles.forEach(another => {
+      this.particles.forEach((another) => {
         if (particle === another) {
           return;
         }

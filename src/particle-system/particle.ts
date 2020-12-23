@@ -10,7 +10,9 @@ export default class Particle {
     private readonly size: number,
     private readonly speed: Vector,
     private readonly color: RGB,
-    private readonly ctx: OffscreenCanvasRenderingContext2D
+    private readonly ctx:
+      | CanvasRenderingContext2D
+      | OffscreenCanvasRenderingContext2D
   ) {}
 
   public move(): void {
