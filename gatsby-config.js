@@ -3,7 +3,12 @@ require("dotenv").config({
 });
 
 module.exports = {
-  flags: { PRESERVE_WEBPACK_CACHE: true, FAST_DEV: true, DEV_SSR: true, FAST_REFRESh: true },
+  flags: {
+    PRESERVE_WEBPACK_CACHE: true,
+    FAST_DEV: true,
+    DEV_SSR: true,
+    FAST_REFRESh: true,
+  },
   siteMetadata: {
     title: `Personal Website`,
     description: `Personal website with Gatsby.js`,
