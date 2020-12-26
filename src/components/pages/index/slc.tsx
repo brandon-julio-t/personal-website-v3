@@ -9,11 +9,13 @@ export default function SLC() {
       <h2 className="text-5xl text-center">
         <ExternalLink href="https://www.instagram.com/slcbinusuniv/" className="hover:underline">
           Software Laboratory Center
-        </ExternalLink>{' '}
-        (20-2)
+        </ExternalLink>
       </h2>
 
-      <figure className="max-w-screen-md mx-auto my-8 transform-gpu transition duration-300 ease-in-out hover:scale-105">
+      <figure
+        className="max-w-screen-md mx-auto my-8 transform-gpu transition duration-300 ease-in-out hover:scale-105"
+        title="20-2 Assistants"
+      >
         <ExternalLink href="https://www.instagram.com/slcbinusuniv">
           <Angkatan alt="20-2 assistants at Software Laboratory Center" className="rounded-3xl" />
         </ExternalLink>
