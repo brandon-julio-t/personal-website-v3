@@ -16,6 +16,7 @@ export default function Contacts() {
   return (
     <section className="mx-auto max-w-screen-sm grid grid-cols-4 md:grid-cols-8 gap-8 my-8">
       <ExternalLink
+        className="transform-gpu hover:scale-150 transition duration-75 ease-in-out"
         href="https://www.facebook.com/profile.php?id=100008724798107"
         aria-label="Facebook"
         title="Facebook"
@@ -23,6 +24,7 @@ export default function Contacts() {
         <FontAwesomeIcon icon={faFacebook} size="2x" />
       </ExternalLink>
       <ExternalLink
+        className="transform-gpu hover:scale-150 transition duration-75 ease-in-out"
         href="https://www.instagram.com/brandon.julio.t"
         aria-label="Instagram"
         title="Instagram"
@@ -30,6 +32,7 @@ export default function Contacts() {
         <FontAwesomeIcon icon={faInstagram} size="2x" />
       </ExternalLink>
       <ExternalLink
+        className="transform-gpu hover:scale-150 transition duration-75 ease-in-out"
         href="https://twitter.com/brandon_julio_t"
         aria-label="Twitter"
         title="Twitter"
@@ -37,6 +40,7 @@ export default function Contacts() {
         <FontAwesomeIcon icon={faTwitter} size="2x" />
       </ExternalLink>
       <ExternalLink
+        className="transform-gpu hover:scale-150 transition duration-75 ease-in-out"
         href="https://github.com/brandon-julio-t"
         aria-label="GitHub"
         title="GitHub"
@@ -44,6 +48,7 @@ export default function Contacts() {
         <FontAwesomeIcon icon={faGithub} size="2x" />
       </ExternalLink>
       <a
+        className="transform-gpu hover:scale-150 transition duration-75 ease-in-out"
         href="mailto:brandon.julio.t@icloud.com"
         aria-label="Email"
         title="Email"
@@ -51,6 +56,7 @@ export default function Contacts() {
         <FontAwesomeIcon icon={faEnvelope} size="2x" />
       </a>
       <ExternalLink
+        className="transform-gpu hover:scale-150 transition duration-75 ease-in-out"
         href="https://www.linkedin.com/in/brandonjuliothenaro"
         aria-label="LinkedIn"
         title="LinkedIn"
@@ -58,6 +64,7 @@ export default function Contacts() {
         <FontAwesomeIcon icon={faLinkedin} size="2x" />
       </ExternalLink>
       <ExternalLink
+        className="transform-gpu hover:scale-150 transition duration-75 ease-in-out"
         href="https://s.id/cv-bjt"
         aria-label="Curriculum Vitae"
         title="Curriculum Vitae"
@@ -65,6 +72,7 @@ export default function Contacts() {
         <FontAwesomeIcon icon={faFileAlt} size="2x" />
       </ExternalLink>
       <ExternalLink
+        className="transform-gpu hover:scale-150 transition duration-75 ease-in-out"
         href="https://www.freecodecamp.org/brandon-julio-thenaro"
         aria-label="freeCodeCamp"
         title="freeCodeCamp"
