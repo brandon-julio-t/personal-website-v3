@@ -102,7 +102,6 @@ export default function TechnologyStackOthers() {
           <svg
             className="h-5"
             version="1.1"
-            id="Layer_1"
             viewBox="0 0 141.219 142.548"
             enableBackground="new 0 0 141.219 142.548"
           >
