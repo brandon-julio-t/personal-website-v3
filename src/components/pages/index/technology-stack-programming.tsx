@@ -18,9 +18,9 @@ export default function () {
           <svg viewBox="0 0 128 128" className="h-5">
             <g>
               <defs>
-                <path id="a" d="M18.8 1h90.5v126h-90.5z" />
+                <path d="M18.8 1h90.5v126h-90.5z" />
               </defs>
-              <clipPath id="b">
+              <clipPath>
                 <use xlinkHref="#a" overflow="visible" />
               </clipPath>
               <path

@@ -41,15 +41,9 @@ export default function TechnologyStackOthers() {
           <svg className="h-5" viewBox="0 0 101 101" version="1.1">
             <title>Group</title>
             <desc>Created with Sketch.</desc>
-            <g
-              id="Page-1"
-              stroke="none"
-              strokeWidth="1"
-              fill="none"
-              fillRule="evenodd"
-            >
+            <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
               <g id="jwt_logo" transform="translate(-150.000000, -538.000000)">
-                <g id="Group" transform="translate(0.000000, 413.000000)">
+                <g transform="translate(0.000000, 413.000000)">
                   <g transform="translate(150.000000, 125.000000)" id="Shape">
                     <g>
                       <path
