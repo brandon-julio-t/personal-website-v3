@@ -15,7 +15,7 @@ export default function () {
           <span>C#</span>
         </TechnologyStackListItem>
         <TechnologyStackListItem>
-          <svg viewBox="0 0 128 128" className="h-5">
+          <svg className="h-5" viewBox="0 0 128 128">
             <g>
               <defs>
                 <path d="M18.8 1h90.5v126h-90.5z" />
