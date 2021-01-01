@@ -107,7 +107,7 @@ export default class ParticleSystem {
   }
 
   private handleParticleSystem(): void {
-    this.particles.forEach((particle, idx) => {
+    this.particles.forEach((particle) => {
       particle.move();
       particle.draw();
       particle.wrapCircle();

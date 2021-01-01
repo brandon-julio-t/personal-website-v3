@@ -7,7 +7,7 @@ module.exports = {
     PRESERVE_WEBPACK_CACHE: true,
     FAST_DEV: true,
     DEV_SSR: true,
-    FAST_REFRESh: true,
+    FAST_REFRESH: true,
   },
   siteMetadata: {
     title: `Personal Website`,

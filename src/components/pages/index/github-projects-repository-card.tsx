@@ -23,7 +23,7 @@ export default function GithubProjectsRepositoryCard(props) {
     }).format(new Date(dateString));
 
   return (
-    <div className="rounded-3xl border border-gray-400 border-opacity-40 px-8 py-4 hover:border-opacity-60 hover:shadow hover:bg-blur transition-all duration-300">
+    <div className="rounded-xl border border-gray-400 border-opacity-40 px-8 py-4 hover:border-opacity-60 hover:shadow hover:bg-blur transition duration-300 transform-gpu hover:scale-105 transition duration-75 ease-in-out">
       <h3 className="text-lg font-bold">{toTitleCase(repository.name)}</h3>
       <small>{toReadableDate(repository.createdAt)}</small>
 
