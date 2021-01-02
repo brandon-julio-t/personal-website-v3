@@ -6,7 +6,6 @@ import "./src/styles/global.css";
 
 // This ensures that the icon CSS is loaded immediately before attempting to render icons
 import "@fortawesome/fontawesome-svg-core/styles.css";
-import "devicon/devicon.min.css";
 
 import { config } from "@fortawesome/fontawesome-svg-core";
 // Prevent fontawesome from dynamically adding its css since we did it manually above
