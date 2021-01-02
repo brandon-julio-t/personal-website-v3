@@ -307,7 +307,7 @@ export default function () {
         </TechnologyStackListItem>
         <TechnologyStackListItem>
           <svg className="h-5" viewBox="0 0 128 128">
-            <g id="original">
+            <g>
               <rect
                 style={{ fill: "#fff" }}
                 x="22.67"
