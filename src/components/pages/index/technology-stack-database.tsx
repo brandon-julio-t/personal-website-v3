@@ -164,7 +164,6 @@ export default function TechnologyStackDatabase() {
               data-name="Layer 1"
               viewBox="0 0 309.88 252.72"
             >
-              <title>MDB-VLogo_RGB</title>
               <path
                 style={{ fill: "#003545" }}
                 d="M61.74,214.91,73,258.46h-8.5L57,227.09,42.86,258.46H35.68L21.62,227.27,13.9,258.46H5.58l11.16-43.55H24.1l15.2,33.72,15.14-33.72Z"
