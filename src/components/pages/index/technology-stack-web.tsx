@@ -33,8 +33,8 @@ export function TechnologyStackWeb() {
           </TechnologyStackListItem>
           <TechnologyStackListItem>
             <svg className="h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 179.2 192.7">
-              <g id="Layer_2" data-name="Layer 2">
-                <g id="Layer_1-2" data-name="Layer 1">
+              <g data-name="Layer 2">
+                <g data-name="Layer 1">
                   <polygon
                     style={{ fill: '#ffa726' }}
                     points="89.4 0 89.4 0 89.4 0 0 32 13.5 150.4 89.4 192.7 89.4 192.7 89.4 192.7 165.4 150.4 179.2 32 89.4 0"
