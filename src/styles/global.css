@@ -9,19 +9,19 @@
 
   @variants hover {
     .bg-blur-sm {
-      backdrop-filter: blur(0.125rem);
+      backdrop-filter: blur(1px);
     }
 
     .bg-blur {
-      backdrop-filter: blur(0.25rem);
+      backdrop-filter: blur(2px);
     }
 
     .bg-blur-md {
-      backdrop-filter: blur(0.5rem);
+      backdrop-filter: blur(4px);
     }
 
     .bg-blur-lg {
-      backdrop-filter: blur(1rem);
+      backdrop-filter: blur(8px);
     }
   }
 

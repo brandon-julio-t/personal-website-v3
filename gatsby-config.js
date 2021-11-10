@@ -3,12 +3,6 @@ require("dotenv").config({
 });
 
 module.exports = {
-  flags: {
-    PRESERVE_WEBPACK_CACHE: true,
-    FAST_DEV: true,
-    DEV_SSR: true,
-    FAST_REFRESH: true,
-  },
   siteMetadata: {
     title: `Personal Website`,
     description: `Personal website with Gatsby.js`,
@@ -27,6 +21,7 @@ module.exports = {
     "gatsby-plugin-sitemap",
     "gatsby-plugin-offline",
     "gatsby-plugin-postcss",
+    "gatsby-plugin-image",
     {
       resolve: "gatsby-plugin-manifest",
       options: {

@@ -13,7 +13,7 @@ export default function SEO(props: SEOProps) {
   const { description, lang, meta, title } = props;
   const { site, favicon } = useStaticQuery(query);
 
-  const faviconURL = `${site.siteMetadata.siteUrl}${favicon.childImageSharp.fluid.srcWebp}`;
+  const faviconURL = `${site.siteMetadata.siteUrl}${favicon.childImageSharp.gatsbyImageData.srcWebp}`;
   const metaDescription = description ?? site.siteMetadata.description;
 
   return (
@@ -40,24 +40,21 @@ export default function SEO(props: SEOProps) {
   );
 }
 
-const query = graphql`
-  query {
-    site {
-      siteMetadata {
-        author
-        description
-        siteUrl
-        title
-      }
-    }
-    favicon: file(relativePath: { eq: "icon.jpg" }) {
-      childImageSharp {
-        fluid {
-          srcWebp
-        }
-      }
+const query = graphql`{
+  site {
+    siteMetadata {
+      author
+      description
+      siteUrl
+      title
     }
   }
+  favicon: file(relativePath: {eq: "icon.jpg"}) {
+    childImageSharp {
+      gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
+    }
+  }
+}
 `;
 
 function metas(args: any) {

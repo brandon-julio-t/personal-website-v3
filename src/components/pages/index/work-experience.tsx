@@ -1,7 +1,7 @@
-import * as React from "react";
+import * as React from 'react';
+import { StaticImage } from 'gatsby-plugin-image';
 
-import ExternalLink from "../../external-link";
-import Angkatan from "../../images/angkatan";
+import ExternalLink from '../../external-link';
 
 export default function WorkExperience() {
   return (
@@ -15,9 +15,13 @@ export default function WorkExperience() {
           <small className="text-base">2020 - present</small>
         </h3>
 
-        <figure className="my-8">
+        <figure
+          className="max-w-screen-md mx-auto my-8 transform-gpu transition duration-150 ease-in-out hover:scale-105"
+          title="20-2 Assistants"
+        >
           <ExternalLink href="https://www.instagram.com/slcbinusuniv">
-            <Angkatan
+            <StaticImage
+              src="../../../images/Angkatan.jpg"
               alt="20-2 assistants at Software Laboratory Center"
               className="rounded-3xl"
             />

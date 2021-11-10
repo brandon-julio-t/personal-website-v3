@@ -1,100 +1,86 @@
-import * as React from "react";
-import { useState } from "react";
-import { useInterval } from "rooks";
+import * as React from 'react';
+import { StaticImage } from 'gatsby-plugin-image';
 
-import ExternalLink from "../../external-link";
-import APIsAndMicroservices from "../../images/apis-and-microservices";
-import FrontEndLibraries from "../../images/front-end-libraries";
-import JavaBasic from "../../images/java-basic";
-import JavaScriptAlgorithmsAndDataStructures from "../../images/javascript-algorithms-and-data-structures";
-import JavaScriptBasic from "../../images/javascript-basic";
-import ReactBasic from "../../images/react-basic";
-import ResponsiveWebDesign from "../../images/responsive-web-design";
-import RestAPI from "../../images/rest-api";
-import TokopediaSTARTSummit from "../../images/tokopedia-start-summit";
-import TypingSpeed from "../../images/typing-speed";
+import ExternalLink from '../../external-link';
 
 export default function Certificate() {
   const certificates = [
     {
-      label: "Certificate APIs and Microservices",
-      component: <APIsAndMicroservices />,
-      url: "https://bit.ly/301Cvx8",
+      label: 'Certificate APIs and Microservices',
+      component: <StaticImage src="../../../images/APIs and Microservices.png" alt="APIs and Microservices" />,
+      url: 'https://bit.ly/301Cvx8',
     },
     {
-      label: "Certificate Front End Libraries",
-      component: <FrontEndLibraries />,
-      url: "https://bit.ly/2YTCNpg",
+      label: 'Certificate Front End Libraries',
+      component: <StaticImage src="../../../images/Front End Libraries.png" alt="Front End Libraries" />,
+      url: 'https://bit.ly/2YTCNpg',
     },
     {
-      label: "Certificate Java Basic",
-      component: <JavaBasic />,
-      url: "https://bit.ly/2YjFn5V",
+      label: 'Certificate Java Basic',
+      component: <StaticImage src="../../../images/Java (Basic).png" alt="Java Basic" />,
+      url: 'https://bit.ly/2YjFn5V',
     },
     {
-      label: "Certificate JavaScript Algorithms and Data Structures",
-      component: <JavaScriptAlgorithmsAndDataStructures />,
-      url: "https://bit.ly/3dA7eFe",
+      label: 'Certificate JavaScript Algorithms and Data Structures',
+      component: (
+        <StaticImage
+          src="../../../images/JavaScript Algorithms and Data Structures.png"
+          alt="JavaScript Algorithms and Data Structures"
+        />
+      ),
+      url: 'https://bit.ly/3dA7eFe',
     },
     {
-      label: "Certificate JavaScript Basic",
-      component: <JavaScriptBasic />,
-      url: "https://bit.ly/2UpwkQ0",
+      label: 'Certificate JavaScript Basic',
+      component: <StaticImage src="../../../images/JavaScript (Basic).png" alt="JavaScript Basic" />,
+      url: 'https://bit.ly/2UpwkQ0',
     },
     {
-      label: "Certificate React Basic",
-      component: <ReactBasic />,
-      url: "https://bit.ly/2MK8kmd",
+      label: 'Certificate React Basic',
+      component: <StaticImage src="../../../images/React (Basic).png" alt="React Basic" />,
+      url: 'https://bit.ly/2MK8kmd',
     },
     {
-      label: "Certificate Responsive Web Design",
-      component: <ResponsiveWebDesign />,
-      url: "https://bit.ly/35OoTpT",
+      label: 'Certificate Responsive Web Design',
+      component: <StaticImage src="../../../images/Responsive Web Design.png" alt="Responsive Web Design" />,
+      url: 'https://bit.ly/35OoTpT',
     },
     {
-      label: "Certificate Rest API",
-      component: <RestAPI />,
-      url: "https://bit.ly/2Oh4RMV",
+      label: 'Certificate Rest API',
+      component: <StaticImage src="../../../images/Rest API.png" alt="Rest API" />,
+      url: 'https://bit.ly/2Oh4RMV',
     },
     {
-      label: "Certificate Tokopedia START Summit",
-      component: <TokopediaSTARTSummit />,
-      url: "https://bit.ly/2xPxg83",
+      label: 'Certificate Tokopedia START Summit',
+      component: <StaticImage src="../../../images/Tokopedia START Summit.png" alt="Tokopedia START Summit" />,
+      url: 'https://bit.ly/2xPxg83',
     },
     {
-      label: "Certificate Typing Speed",
-      component: <TypingSpeed />,
-      url: "https://bit.ly/2WH3M4U",
+      label: 'Certificate Typing Speed',
+      component: <StaticImage src="../../../images/Typing Speed.jpg" alt="Typing Speed" />,
+      url: 'https://bit.ly/2WH3M4U',
+    },
+    {
+      label: 'Certificate Indomaret Common Knowledge Quiz',
+      component: (
+        <StaticImage src="../../../images/Indomaret Common Knowledge Quiz.png" alt="Indomaret Common Knowledge Quiz" />
+      ),
+      url: '',
     },
   ];
 
-  const certificateSliderInterval = 3500;
-  const [currentCertificateIndex, setCurrentCertificateIndex] = useState(0);
-  const [currentCertificate, setCurrentCertificate] = useState(
-    certificates[currentCertificateIndex]
-  );
-
-  const nextCertificateImage = () => {
-    setCurrentCertificate(
-      certificates[currentCertificateIndex % certificates.length]
-    );
-
-    setCurrentCertificateIndex((prevIndex) => prevIndex + 1);
-  };
-
-  useInterval(() => nextCertificateImage(), certificateSliderInterval)["0"](); // call start function
-
   return (
     <section>
-      <h2 className="text-5xl text-center">Certificates</h2>
+      <h2 className="text-5xl text-center mb-4">Certificates</h2>
 
-      <div className="max-w-screen-sm mx-auto my-8" style={{ height: 500 }}>
-        <ExternalLink
-          href={currentCertificate.url}
-          aria-label={currentCertificate.label}
-        >
-          {currentCertificate.component}
-        </ExternalLink>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 items-center">
+        {certificates.map(certificate => (
+          <div className="transform-gpu hover:scale-105 transition duration-75 ease-in-out">
+            <ExternalLink href={certificate.url} aria-label={certificate.label}>
+              {certificate.component}
+            </ExternalLink>
+          </div>
+        ))}
       </div>
     </section>
   );
