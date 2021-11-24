@@ -18,11 +18,13 @@ export default function HeroScrollDownIndicator() {
     return () => clear();
   }, []);
 
-  useOnWindowScroll(() => {
-    setHasScrolled(true);
-    setShowScrollDownIndicator(false);
-    clear();
-  }, !hasScrolled);
+  if (typeof window !== 'undefined') {
+    useOnWindowScroll(() => {
+      setHasScrolled(true);
+      setShowScrollDownIndicator(false);
+      clear();
+    }, !hasScrolled);
+  }
 
   return (
     <FontAwesomeIcon
