@@ -33,7 +33,7 @@ export default function Footer() {
 
         <section>
           <h2>Built with</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
             <FooterCreditItem>
               <ExternalLink
                 href="https://www.gatsbyjs.com/"
@@ -142,7 +142,7 @@ export default function Footer() {
 
         <section>
           <h2>Icons by</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
             <FooterCreditItem>
               <ExternalLink
                 href="https://fontawesome.com/"

@@ -40,21 +40,22 @@ export default function SEO(props: SEOProps) {
   );
 }
 
-const query = graphql`{
-  site {
-    siteMetadata {
-      author
-      description
-      siteUrl
-      title
+const query = graphql`
+  {
+    site {
+      siteMetadata {
+        author
+        description
+        siteUrl
+        title
+      }
+    }
+    favicon: file(relativePath: { eq: "icon.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
+      }
     }
   }
-  favicon: file(relativePath: {eq: "icon.jpg"}) {
-    childImageSharp {
-      gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
-    }
-  }
-}
 `;
 
 function metas(args: any) {

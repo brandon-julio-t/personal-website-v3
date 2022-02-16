@@ -8,10 +8,10 @@ import { TechnologyStackFrontEnd } from "./technology-stack-front-end";
 
 export default function TechnologyStack() {
   return (
-    <section className="max-w-screen-lg mx-auto">
-      <h2 className="text-5xl text-center">Technology Stack</h2>
+    <section className="mx-auto max-w-screen-lg">
+      <h2 className="text-center text-5xl">Technology Stack</h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 my-8">
+      <div className="my-8 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
         <TechnologyStackFrontEnd />
         <TechnologyStackBackEnd />
         <TechnologyStackProgramming />

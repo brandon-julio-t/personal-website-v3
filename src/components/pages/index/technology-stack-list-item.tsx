@@ -7,11 +7,11 @@ export default function TechnologyStackListItem(props) {
     <li
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
-      className="flex items-center justify-center space-x-1 transform-gpu hover:scale-150 transition duration-75 ease-in-out text-lg group"
+      className="group flex transform-gpu items-center justify-center space-x-1 text-lg transition duration-75 ease-in-out hover:scale-150"
       {...props}
     >
       <span
-        className={`transition-all duration-150 ease-in-out opacity-0 group-hover:opacity-50 transform-gpu ${
+        className={`transform-gpu opacity-0 transition-all duration-150 ease-in-out group-hover:opacity-50 ${
           hover ? `translate-x-0` : `-translate-x-4`
         }`}
       >
@@ -19,7 +19,7 @@ export default function TechnologyStackListItem(props) {
       </span>
       {props.children}
       <span
-        className={`transition-all duration-150 ease-in-out opacity-0 group-hover:opacity-50 transform-gpu ${
+        className={`transform-gpu opacity-0 transition-all duration-150 ease-in-out group-hover:opacity-50 ${
           hover ? `translate-x-0` : `translate-x-4`
         }`}
       >

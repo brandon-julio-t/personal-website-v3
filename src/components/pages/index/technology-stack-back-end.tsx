@@ -1,8 +1,8 @@
-import * as React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLaravel } from '@fortawesome/free-brands-svg-icons';
+import * as React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLaravel } from "@fortawesome/free-brands-svg-icons";
 
-import TechnologyStackListItem from './technology-stack-list-item';
+import TechnologyStackListItem from "./technology-stack-list-item";
 
 export function TechnologyStackBackEnd() {
   return (
@@ -19,7 +19,10 @@ export function TechnologyStackBackEnd() {
           <span>Express</span>
         </TechnologyStackListItem>
         <TechnologyStackListItem>
-          <FontAwesomeIcon icon={faLaravel} className="h-4 fill-current text-red-600" />
+          <FontAwesomeIcon
+            icon={faLaravel}
+            className="h-4 fill-current text-red-600"
+          />
           <span>Laravel</span>
         </TechnologyStackListItem>
         <TechnologyStackListItem>

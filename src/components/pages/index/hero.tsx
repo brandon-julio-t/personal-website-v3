@@ -5,7 +5,7 @@ import HeroScrollDownIndicator from "./hero-scroll-down-indicator";
 
 export default function Hero() {
   return (
-    <header className="h-screen flex flex-col space-y-8 justify-center items-center text-center relative">
+    <header className="relative flex h-screen flex-col items-center justify-center space-y-8 text-center">
       <h1 className="text-6xl">
         Brandon Julio Thenaro
         <br />

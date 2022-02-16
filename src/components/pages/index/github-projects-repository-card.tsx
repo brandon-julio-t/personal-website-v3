@@ -23,11 +23,11 @@ export default function GithubProjectsRepositoryCard(props) {
     }).format(new Date(dateString));
 
   return (
-    <div className="rounded-xl border border-black border-opacity-10 px-8 py-4 hover:shadow bg-blur-sm hover:bg-blur transform-gpu hover:scale-105 transition duration-75 ease-in-out">
+    <div className="bg-blur-sm hover:bg-blur transform-gpu rounded-xl border border-black border-opacity-10 px-8 py-4 transition duration-75 ease-in-out hover:scale-105 hover:shadow">
       <h3 className="text-lg font-bold">{toTitleCase(repository.name)}</h3>
       <small>{toReadableDate(repository.createdAt)}</small>
 
-      <div className="flex flex-wrap space-x-1 my-2">
+      <div className="my-2 flex flex-wrap space-x-1">
         {repository.languages.nodes.map((language, idx) => (
           <GithubProjectsLanguagePill key={idx} language={language} />
         ))}
@@ -43,7 +43,7 @@ export default function GithubProjectsRepositoryCard(props) {
         <FontAwesomeIcon icon={faGlobe} role="img" /> View Live
       </ExternalLink>
 
-      <p className="text-base italic my-2">{repository.description}</p>
+      <p className="my-2 text-base italic">{repository.description}</p>
     </div>
   );
 }

@@ -18,7 +18,7 @@ export default function HeroScrollDownIndicator() {
     return () => clear();
   }, []);
 
-  if (typeof window !== 'undefined') {
+  if (typeof window !== "undefined") {
     useOnWindowScroll(() => {
       setHasScrolled(true);
       setShowScrollDownIndicator(false);
@@ -29,7 +29,7 @@ export default function HeroScrollDownIndicator() {
   return (
     <FontAwesomeIcon
       icon={faChevronDown}
-      className={`block absolute bottom-0 mx-auto transition-all duration-300 transform-gpu ${
+      className={`absolute bottom-0 mx-auto block transform-gpu transition-all duration-300 ${
         showScrollDownIndicator
           ? "translate-y-0 opacity-100"
           : "-translate-y-16 opacity-0"
