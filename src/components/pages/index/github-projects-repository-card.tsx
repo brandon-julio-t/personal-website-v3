@@ -14,6 +14,7 @@ export default function GithubProjectsRepositoryCard(props) {
       .split("-")
       .map((word) => word[0].toUpperCase() + word.substring(1).toLowerCase())
       .join(" ");
+  y;
 
   const toReadableDate = (dateString: string): string =>
     new Intl.DateTimeFormat([], {
@@ -23,7 +24,7 @@ export default function GithubProjectsRepositoryCard(props) {
     }).format(new Date(dateString));
 
   return (
-    <div className="bg-blur-sm hover:bg-blur transform-gpu rounded-xl border border-black border-opacity-10 px-8 py-4 transition duration-75 ease-in-out hover:scale-105 hover:shadow">
+    <div className="transform-gpu rounded-xl border border-black border-opacity-10 px-8 py-4 backdrop-blur transition duration-75 ease-in-out hover:scale-105 hover:shadow hover:backdrop-blur-md">
       <h3 className="text-lg font-bold">{toTitleCase(repository.name)}</h3>
       <small>{toReadableDate(repository.createdAt)}</small>
 
