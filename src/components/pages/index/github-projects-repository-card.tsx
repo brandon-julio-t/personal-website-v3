@@ -23,27 +23,31 @@ export default function GithubProjectsRepositoryCard(props) {
     }).format(new Date(dateString));
 
   return (
-    <div className="rounded-xl border border-black border-opacity-10 px-8 py-4 shadow backdrop-blur-sm transition-all hover:shadow-md hover:backdrop-blur">
-      <h3 className="text-lg font-bold">{toTitleCase(repository.name)}</h3>
-      <small>{toReadableDate(repository.createdAt)}</small>
+    <div>
+      <div className="rounded-xl border border-black border-opacity-10 px-8 py-4 shadow backdrop-blur-sm transition-all hover:shadow-md hover:backdrop-blur">
+        <h3 className="text-lg font-bold">{toTitleCase(repository.name)}</h3>
+        <small>{toReadableDate(repository.createdAt)}</small>
 
-      <div className="my-2 flex flex-wrap space-x-1">
-        {repository.languages.nodes.map((language, idx) => (
-          <GithubProjectsLanguagePill key={idx} language={language} />
-        ))}
+        <div className="my-2 flex flex-wrap space-x-1">
+          {repository.languages.nodes.map((language, idx) => (
+            <GithubProjectsLanguagePill key={idx} language={language} />
+          ))}
+        </div>
+
+        <ExternalLink href={repository.url} className="flex items-center hover:underline">
+          <FontAwesomeIcon className="mr-1 h-5" icon={faGithub} /> View on GitHub
+        </ExternalLink>
+
+        <div className="my-2" />
+
+        {repository.homepageUrl && (
+          <ExternalLink href={repository.homepageUrl} className="flex items-center hover:underline">
+            <FontAwesomeIcon className="mr-1 h-5" icon={faGlobe} /> View Live
+          </ExternalLink>
+        )}
+
+        <p className="my-2 text-base italic">{repository.description}</p>
       </div>
-
-      <ExternalLink href={repository.url} className="hover:underline">
-        <FontAwesomeIcon className="h-5" icon={faGithub} /> View on GitHub
-      </ExternalLink>
-
-      <div className="my-2" />
-
-      <ExternalLink href={repository.homepageUrl} className="hover:underline">
-        <FontAwesomeIcon className="h-5" icon={faGlobe} /> View Live
-      </ExternalLink>
-
-      <p className="my-2 text-base italic">{repository.description}</p>
     </div>
   );
 }
