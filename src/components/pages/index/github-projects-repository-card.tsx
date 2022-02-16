@@ -1,25 +1,25 @@
-import * as React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faGlobe } from "@fortawesome/free-solid-svg-icons";
+import * as React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 
-import ExternalLink from "../../external-link";
-import GithubProjectsLanguagePill from "./github-projects-language-pill";
+import ExternalLink from '../../external-link';
+import GithubProjectsLanguagePill from './github-projects-language-pill';
 
 export default function GithubProjectsRepositoryCard(props) {
   const { repository } = props;
 
   const toTitleCase = (text: string): string =>
     text
-      .split("-")
-      .map((word) => word[0].toUpperCase() + word.substring(1).toLowerCase())
-      .join(" ");
+      .split('-')
+      .map(word => word[0].toUpperCase() + word.substring(1).toLowerCase())
+      .join(' ');
 
   const toReadableDate = (dateString: string): string =>
     new Intl.DateTimeFormat([], {
-      day: "2-digit",
-      month: "long",
-      year: "numeric",
+      day: '2-digit',
+      month: 'long',
+      year: 'numeric',
     }).format(new Date(dateString));
 
   return (
@@ -34,13 +34,13 @@ export default function GithubProjectsRepositoryCard(props) {
       </div>
 
       <ExternalLink href={repository.url} className="hover:underline">
-        <FontAwesomeIcon icon={faGithub} role="img" /> View on GitHub
+        <FontAwesomeIcon size="1x" icon={faGithub} role="img" /> View on GitHub
       </ExternalLink>
 
       <div className="my-2" />
 
       <ExternalLink href={repository.homepageUrl} className="hover:underline">
-        <FontAwesomeIcon icon={faGlobe} role="img" /> View Live
+        <FontAwesomeIcon size="1x" icon={faGlobe} role="img" /> View Live
       </ExternalLink>
 
       <p className="my-2 text-base italic">{repository.description}</p>
