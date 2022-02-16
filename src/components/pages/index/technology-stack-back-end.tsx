@@ -1,8 +1,8 @@
-import * as React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLaravel } from "@fortawesome/free-brands-svg-icons";
+import * as React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLaravel } from '@fortawesome/free-brands-svg-icons';
 
-import TechnologyStackListItem from "./technology-stack-list-item";
+import TechnologyStackListItem from './technology-stack-list-item';
 
 export function TechnologyStackBackEnd() {
   return (
@@ -19,10 +19,7 @@ export function TechnologyStackBackEnd() {
           <span>Express</span>
         </TechnologyStackListItem>
         <TechnologyStackListItem>
-          <FontAwesomeIcon
-            icon={faLaravel}
-            className="h-4 fill-current text-red-600"
-          />
+          <FontAwesomeIcon icon={faLaravel} className="h-4 fill-current text-red-600" />
           <span>Laravel</span>
         </TechnologyStackListItem>
         <TechnologyStackListItem>
@@ -47,12 +44,12 @@ export function TechnologyStackBackEnd() {
               y2="563.347"
               gradientTransform="matrix(0 149.735 149.735 0 -84296.266 -9188.014)"
             >
-              <stop offset="0" stop-color="#0994DC"></stop>
-              <stop offset=".35" stop-color="#66CEF5"></stop>
-              <stop offset=".35" stop-color="#66CEF5"></stop>
-              <stop offset=".846" stop-color="#127BCA"></stop>
-              <stop offset=".846" stop-color="#127BCA"></stop>
-              <stop offset="1" stop-color="#127BCA"></stop>
+              <stop offset="0" stopColor="#0994DC"></stop>
+              <stop offset=".35" stopColor="#66CEF5"></stop>
+              <stop offset=".35" stopColor="#66CEF5"></stop>
+              <stop offset=".846" stopColor="#127BCA"></stop>
+              <stop offset=".846" stopColor="#127BCA"></stop>
+              <stop offset="1" stopColor="#127BCA"></stop>
             </linearGradient>
             <path
               fill="url(#dot-net-original-a)"
@@ -67,12 +64,12 @@ export function TechnologyStackBackEnd() {
               y2="563.34"
               gradientTransform="matrix(0 153.551 153.551 0 -86442.719 -9435.969)"
             >
-              <stop offset="0" stop-color="#0E76BC"></stop>
-              <stop offset=".36" stop-color="#36AEE8"></stop>
-              <stop offset=".36" stop-color="#36AEE8"></stop>
-              <stop offset=".846" stop-color="#00ADEF"></stop>
-              <stop offset=".846" stop-color="#00ADEF"></stop>
-              <stop offset="1" stop-color="#00ADEF"></stop>
+              <stop offset="0" stopColor="#0E76BC"></stop>
+              <stop offset=".36" stopColor="#36AEE8"></stop>
+              <stop offset=".36" stopColor="#36AEE8"></stop>
+              <stop offset=".846" stopColor="#00ADEF"></stop>
+              <stop offset=".846" stopColor="#00ADEF"></stop>
+              <stop offset="1" stopColor="#00ADEF"></stop>
             </linearGradient>
             <path
               fill="url(#dot-net-original-b)"
@@ -91,9 +88,9 @@ export function TechnologyStackBackEnd() {
               y2="564.985"
               gradientTransform="matrix(0 -122.178 -122.178 0 69099.289 8331.043)"
             >
-              <stop offset="0" stop-color="#1C63B7"></stop>
-              <stop offset=".5" stop-color="#33BDF2"></stop>
-              <stop offset="1" stop-color="#33BDF2" stop-opacity=".42"></stop>
+              <stop offset="0" stopColor="#1C63B7"></stop>
+              <stop offset=".5" stopColor="#33BDF2"></stop>
+              <stop offset="1" stopColor="#33BDF2" stopOpacity=".42"></stop>
             </linearGradient>
             <path
               fill="url(#dot-net-original-c)"
@@ -116,12 +113,12 @@ export function TechnologyStackBackEnd() {
               y2="563.281"
               gradientTransform="matrix(0 159.425 159.425 0 -89733.742 -9828.116)"
             >
-              <stop offset="0" stop-color="#166AB8"></stop>
-              <stop offset=".4" stop-color="#36AEE8"></stop>
-              <stop offset=".4" stop-color="#36AEE8"></stop>
-              <stop offset=".846" stop-color="#0798DD"></stop>
-              <stop offset=".846" stop-color="#0798DD"></stop>
-              <stop offset="1" stop-color="#0798DD"></stop>
+              <stop offset="0" stopColor="#166AB8"></stop>
+              <stop offset=".4" stopColor="#36AEE8"></stop>
+              <stop offset=".4" stopColor="#36AEE8"></stop>
+              <stop offset=".846" stopColor="#0798DD"></stop>
+              <stop offset=".846" stopColor="#0798DD"></stop>
+              <stop offset="1" stopColor="#0798DD"></stop>
             </linearGradient>
             <path
               fill="url(#dot-net-original-d)"
@@ -136,12 +133,12 @@ export function TechnologyStackBackEnd() {
               y2="563.367"
               gradientTransform="matrix(0 169.528 169.528 0 -95443.742 -10473.372)"
             >
-              <stop offset="0" stop-color="#124379"></stop>
-              <stop offset=".39" stop-color="#1487CB"></stop>
-              <stop offset=".39" stop-color="#1487CB"></stop>
-              <stop offset=".78" stop-color="#165197"></stop>
-              <stop offset=".78" stop-color="#165197"></stop>
-              <stop offset="1" stop-color="#165197"></stop>
+              <stop offset="0" stopColor="#124379"></stop>
+              <stop offset=".39" stopColor="#1487CB"></stop>
+              <stop offset=".39" stopColor="#1487CB"></stop>
+              <stop offset=".78" stopColor="#165197"></stop>
+              <stop offset=".78" stopColor="#165197"></stop>
+              <stop offset="1" stopColor="#165197"></stop>
             </linearGradient>
             <path
               fill="url(#dot-net-original-e)"
@@ -156,8 +153,8 @@ export function TechnologyStackBackEnd() {
               y2="-1412.08"
               gradientTransform="matrix(4.038 0 0 -4.038 -4028.633 -5649.283)"
             >
-              <stop offset="0" stop-color="#33BDF2" stop-opacity=".698"></stop>
-              <stop offset="1" stop-color="#1DACD8"></stop>
+              <stop offset="0" stopColor="#33BDF2" stopOpacity=".698"></stop>
+              <stop offset="1" stopColor="#1DACD8"></stop>
             </linearGradient>
             <path
               fill="url(#dot-net-original-f)"
@@ -180,9 +177,9 @@ export function TechnologyStackBackEnd() {
               y2="565.48"
               gradientTransform="matrix(0 -119.018 -119.018 0 67408.578 8125.832)"
             >
-              <stop offset="0" stop-color="#136AB4"></stop>
-              <stop offset=".6" stop-color="#59CAF5" stop-opacity=".549"></stop>
-              <stop offset="1" stop-color="#59CAF5" stop-opacity=".235"></stop>
+              <stop offset="0" stopColor="#136AB4"></stop>
+              <stop offset=".6" stopColor="#59CAF5" stopOpacity=".549"></stop>
+              <stop offset="1" stopColor="#59CAF5" stopOpacity=".235"></stop>
             </linearGradient>
             <path
               fill="url(#dot-net-original-g)"
@@ -197,8 +194,8 @@ export function TechnologyStackBackEnd() {
               y2="-1414.829"
               gradientTransform="matrix(4.038 0 0 -4.038 -4028.633 -5649.283)"
             >
-              <stop offset="0" stop-color="#05A1E6" stop-opacity=".247"></stop>
-              <stop offset="1" stop-color="#05A1E6"></stop>
+              <stop offset="0" stopColor="#05A1E6" stopOpacity=".247"></stop>
+              <stop offset="1" stopColor="#05A1E6"></stop>
             </linearGradient>
             <path
               fill="url(#dot-net-original-h)"
@@ -221,8 +218,8 @@ export function TechnologyStackBackEnd() {
               y2="564.359"
               gradientTransform="matrix(0 -121.865 -121.865 0 68797.742 8310.488)"
             >
-              <stop offset="0" stop-color="#318ED5"></stop>
-              <stop offset="1" stop-color="#38A7E4"></stop>
+              <stop offset="0" stopColor="#318ED5"></stop>
+              <stop offset="1" stopColor="#38A7E4"></stop>
             </linearGradient>
             <path
               fill="url(#dot-net-original-i)"
@@ -241,8 +238,8 @@ export function TechnologyStackBackEnd() {
               y2="564.41"
               gradientTransform="matrix(0 -118.46 -118.46 0 66884.703 8093.017)"
             >
-              <stop offset="0" stop-color="#05A1E6"></stop>
-              <stop offset="1" stop-color="#05A1E6" stop-opacity=".549"></stop>
+              <stop offset="0" stopColor="#05A1E6"></stop>
+              <stop offset="1" stopColor="#05A1E6" stopOpacity=".549"></stop>
             </linearGradient>
             <path
               fill="url(#dot-net-original-j)"
@@ -257,11 +254,11 @@ export function TechnologyStackBackEnd() {
               y2="564.525"
               gradientTransform="matrix(0 -100.1 -100.1 0 56536.551 6924.301)"
             >
-              <stop offset="0" stop-color="#1959A6"></stop>
-              <stop offset=".5" stop-color="#05A1E6"></stop>
-              <stop offset=".5" stop-color="#05A1E6"></stop>
-              <stop offset=".918" stop-color="#7EC5EA"></stop>
-              <stop offset="1" stop-color="#7EC5EA"></stop>
+              <stop offset="0" stopColor="#1959A6"></stop>
+              <stop offset=".5" stopColor="#05A1E6"></stop>
+              <stop offset=".5" stopColor="#05A1E6"></stop>
+              <stop offset=".918" stopColor="#7EC5EA"></stop>
+              <stop offset="1" stopColor="#7EC5EA"></stop>
             </linearGradient>
             <path
               fill="url(#dot-net-original-k)"
@@ -280,8 +277,8 @@ export function TechnologyStackBackEnd() {
               y2="563.82"
               gradientTransform="scale(-110.211 110.211) rotate(-80 -301.688 322.91)"
             >
-              <stop offset="0" stop-color="#165096"></stop>
-              <stop offset="1" stop-color="#0D82CA"></stop>
+              <stop offset="0" stopColor="#165096"></stop>
+              <stop offset="1" stopColor="#0D82CA"></stop>
             </linearGradient>
             <path
               fill="url(#dot-net-original-l)"
@@ -296,9 +293,9 @@ export function TechnologyStackBackEnd() {
               y2="566.882"
               gradientTransform="matrix(0 -56.721 -56.721 0 32252.127 4080.282)"
             >
-              <stop offset="0" stop-color="#05A1E6"></stop>
-              <stop offset=".874" stop-color="#0495D6"></stop>
-              <stop offset="1" stop-color="#0495D6"></stop>
+              <stop offset="0" stopColor="#05A1E6"></stop>
+              <stop offset=".874" stopColor="#0495D6"></stop>
+              <stop offset="1" stopColor="#0495D6"></stop>
             </linearGradient>
             <path
               fill="url(#dot-net-original-m)"
@@ -313,10 +310,10 @@ export function TechnologyStackBackEnd() {
               y2="562.213"
               gradientTransform="scale(-132.813 132.813) rotate(80 365.248 244.034)"
             >
-              <stop offset="0" stop-color="#38A7E4" stop-opacity=".329"></stop>
-              <stop offset=".962" stop-color="#0E88D3"></stop>
-              <stop offset=".962" stop-color="#0E88D3"></stop>
-              <stop offset="1" stop-color="#0E88D3"></stop>
+              <stop offset="0" stopColor="#38A7E4" stopOpacity=".329"></stop>
+              <stop offset=".962" stopColor="#0E88D3"></stop>
+              <stop offset=".962" stopColor="#0E88D3"></stop>
+              <stop offset="1" stopColor="#0E88D3"></stop>
             </linearGradient>
             <path
               fill="url(#dot-net-original-n)"
@@ -351,9 +348,9 @@ export function TechnologyStackBackEnd() {
               y2="562.654"
               gradientTransform="matrix(0 123.742 123.742 0 -69523.625 -7527.189)"
             >
-              <stop offset="0" stop-color="#168CD4"></stop>
-              <stop offset=".5" stop-color="#1C87CC"></stop>
-              <stop offset="1" stop-color="#154B8D"></stop>
+              <stop offset="0" stopColor="#168CD4"></stop>
+              <stop offset=".5" stopColor="#1C87CC"></stop>
+              <stop offset="1" stopColor="#154B8D"></stop>
             </linearGradient>
             <path
               fill="url(#dot-net-original-o)"
@@ -377,9 +374,9 @@ export function TechnologyStackBackEnd() {
                 y2="336.158"
                 gradientTransform="scale(30.857 -30.857) rotate(22.527 1812.675 -4228.953)"
               >
-                <stop offset="0" stop-color="#97D6EE"></stop>
-                <stop offset=".703" stop-color="#55C1EA"></stop>
-                <stop offset="1" stop-color="#55C1EA"></stop>
+                <stop offset="0" stopColor="#97D6EE"></stop>
+                <stop offset=".703" stopColor="#55C1EA"></stop>
+                <stop offset="1" stopColor="#55C1EA"></stop>
               </linearGradient>
               <path
                 fill="url(#dot-net-original-p)"
@@ -396,8 +393,8 @@ export function TechnologyStackBackEnd() {
                 y2="335.171"
                 gradientTransform="scale(24.717 -24.717) rotate(-24.385 124.122 4175.416)"
               >
-                <stop offset="0" stop-color="#7ACCEC"></stop>
-                <stop offset="1" stop-color="#3FB7ED"></stop>
+                <stop offset="0" stopColor="#7ACCEC"></stop>
+                <stop offset="1" stopColor="#3FB7ED"></stop>
               </linearGradient>
               <path
                 fill="url(#dot-net-original-q)"
@@ -413,8 +410,8 @@ export function TechnologyStackBackEnd() {
               y2="562.706"
               gradientTransform="matrix(0 121.032 121.032 0 -68011.711 -7346.748)"
             >
-              <stop offset="0" stop-color="#1DA7E7"></stop>
-              <stop offset="1" stop-color="#37ABE7" stop-opacity="0"></stop>
+              <stop offset="0" stopColor="#1DA7E7"></stop>
+              <stop offset="1" stopColor="#37ABE7" stopOpacity="0"></stop>
             </linearGradient>
             <path
               fill="url(#dot-net-original-r)"

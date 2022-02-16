@@ -1,4 +1,4 @@
-require("dotenv").config({
+require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
 });
 
@@ -11,63 +11,36 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: "gatsby-plugin-google-analytics",
+      resolve: 'gatsby-plugin-google-analytics',
       options: {
-        trackingId: "UA-142762819-1",
+        trackingId: 'UA-142762819-1',
       },
     },
-    "gatsby-plugin-sharp",
-    "gatsby-plugin-react-helmet",
-    "gatsby-plugin-sitemap",
-    "gatsby-plugin-offline",
-    "gatsby-plugin-postcss",
-    "gatsby-plugin-image",
+    'gatsby-plugin-sharp',
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sitemap',
+    'gatsby-plugin-offline',
+    'gatsby-plugin-postcss',
+    'gatsby-plugin-image',
     {
-      resolve: "gatsby-plugin-manifest",
+      resolve: 'gatsby-plugin-manifest',
       options: {
-        icon: "src/images/icon.jpg",
+        icon: 'src/images/icon.jpg',
       },
     },
-    "gatsby-transformer-sharp",
+    'gatsby-transformer-sharp',
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: "images",
-        path: "./src/images/",
+        name: 'images',
+        path: './src/images/',
       },
-      __key: "images",
+      __key: 'images',
     },
     {
       resolve: `gatsby-plugin-layout`,
       options: {
         component: require.resolve(`./src/components/layouts/index.tsx`),
-      },
-    },
-    {
-      resolve: `gatsby-source-github-api`,
-      options: {
-        token: process.env.GITHUB_GRAPHQL_TOKEN,
-        graphQLQuery: `{
-          viewer {
-            pinnedItems(first: 6) {
-              nodes {
-                ... on Repository {
-                  createdAt
-                  description
-                  homepageUrl
-                  name
-                  url
-                  languages(first: 3) {
-                      nodes {
-                        name
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        `,
       },
     },
   ],

@@ -1,7 +1,7 @@
-import * as React from "react";
+import * as React from 'react';
 
-import Contacts from "../../contacts";
-import HeroScrollDownIndicator from "./hero-scroll-down-indicator";
+import Contacts from '../../common/contacts';
+import HeroScrollDownIndicator from './hero-scroll-down-indicator';
 
 export default function Hero() {
   return (

@@ -5,17 +5,6 @@ __metadata:
   version: 5
   cacheKey: 8
 
-"101@npm:^1.0.0, 101@npm:^1.5.0":
-  version: 1.6.3
-  resolution: "101@npm:1.6.3"
-  dependencies:
-    clone: ^1.0.2
-    deep-eql: ^0.1.3
-    keypather: ^1.10.2
-  checksum: 1b5cde63cb5566e9ef18c9aa57a19d6acb132d508ae87994126050752e631d2638cf9176d1cb71cd2798fd7adaea8d3e73179ad1261f61684e1e7aad278c30f8
-  languageName: node
-  linkType: hard
-
 "@ardatan/aggregate-error@npm:0.0.6":
   version: 0.0.6
   resolution: "@ardatan/aggregate-error@npm:0.0.6"
@@ -4740,13 +4729,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"clone@npm:^1.0.2":
-  version: 1.0.4
-  resolution: "clone@npm:1.0.4"
-  checksum: d06418b7335897209e77bdd430d04f882189582e67bd1f75a04565f3f07f5b3f119a9d670c943b6697d0afb100f03b866b3b8a1f91d4d02d72c4ecf2bb64b5dd
-  languageName: node
-  linkType: hard
-
 "coa@npm:^2.0.2":
   version: 2.0.2
   resolution: "coa@npm:2.0.2"
@@ -5571,15 +5553,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"deep-eql@npm:^0.1.3":
-  version: 0.1.3
-  resolution: "deep-eql@npm:0.1.3"
-  dependencies:
-    type-detect: 0.1.1
-  checksum: 959734acb233d00727b3e64c8c803d233315ad8d4f7ccf89455a8a12f745055e78df087d1afabbe8931a9387f585d3bc4bf57bdb94e5e52055b38f5ae9360ca7
-  languageName: node
-  linkType: hard
-
 "deep-extend@npm:^0.6.0":
   version: 0.6.0
   resolution: "deep-extend@npm:0.6.0"
@@ -6032,7 +6005,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"encoding@npm:^0.1.11, encoding@npm:^0.1.12":
+"encoding@npm:^0.1.12":
   version: 0.1.13
   resolution: "encoding@npm:0.1.13"
   dependencies:
@@ -7741,16 +7714,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-source-github-api@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "gatsby-source-github-api@npm:1.0.0"
-  dependencies:
-    graphql-fetch: ^1.0.1
-    uuid: ^3.1.0
-  checksum: 2d669875ad731159dcbcfca3e02d9f53419956295f94dbcf0d7a7c7674270fb6ab03420819f13b89c00e76c632366389641858f3fc664c83b67915acbe723105
-  languageName: node
-  linkType: hard
-
 "gatsby-telemetry@npm:^3.1.0":
   version: 3.1.0
   resolution: "gatsby-telemetry@npm:3.1.0"
@@ -8345,16 +8308,6 @@ __metadata:
   peerDependencies:
     graphql: ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0
   checksum: c1179d44b4fea53784ec7fa2cf56acbcfcd2886bd617fa847106b51471b8cd3b30daae0a0fb04a9c208cfde77f7783383dc5f5f094b22007c44455feceb5691a
-  languageName: node
-  linkType: hard
-
-"graphql-fetch@npm:^1.0.1":
-  version: 1.0.1
-  resolution: "graphql-fetch@npm:1.0.1"
-  dependencies:
-    101: ^1.5.0
-    isomorphic-fetch: ^2.2.1
-  checksum: a145e85e149072b0fc52995935fe935dddd5a5a8149d0a3051eb8d7794484124c0753a7399ff76e583e3d0f8b3be242f07237e80306ec83a41c89947425b0784
   languageName: node
   linkType: hard
 
@@ -9435,7 +9388,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"is-stream@npm:^1.0.1, is-stream@npm:^1.1.0":
+"is-stream@npm:^1.1.0":
   version: 1.1.0
   resolution: "is-stream@npm:1.1.0"
   checksum: 063c6bec9d5647aa6d42108d4c59723d2bd4ae42135a2d4db6eadbd49b7ea05b750fd69d279e5c7c45cf9da753ad2c00d8978be354d65aa9f6bb434969c6a2ae
@@ -9579,16 +9532,6 @@ __metadata:
   version: 3.0.1
   resolution: "isobject@npm:3.0.1"
   checksum: db85c4c970ce30693676487cca0e61da2ca34e8d4967c2e1309143ff910c207133a969f9e4ddb2dc6aba670aabce4e0e307146c310350b298e74a31f7d464703
-  languageName: node
-  linkType: hard
-
-"isomorphic-fetch@npm:^2.2.1":
-  version: 2.2.1
-  resolution: "isomorphic-fetch@npm:2.2.1"
-  dependencies:
-    node-fetch: ^1.0.1
-    whatwg-fetch: ">=0.10.0"
-  checksum: bb5daa7c3785d6742f4379a81e55b549a469503f7c9bf9411b48592e86632cf5e8fe8ea878dba185c0f33eb7c510c23abdeb55aebfdf5d3c70f031ced68c5424
   languageName: node
   linkType: hard
 
@@ -9829,15 +9772,6 @@ __metadata:
     array-includes: ^3.1.3
     object.assign: ^4.1.2
   checksum: dcee22e6382ee5a6bd4187333a44b6420d9d079838119a07055d6e88d137dd0afadc97a2246152b0b65006bd5fc393112dc0cef01956a01a66c1713913953c66
-  languageName: node
-  linkType: hard
-
-"keypather@npm:^1.10.2":
-  version: 1.10.2
-  resolution: "keypather@npm:1.10.2"
-  dependencies:
-    101: ^1.0.0
-  checksum: 9bc3eade70c44d70b57ce5953f97761ef19ae51cfb5986920610b412489dd3f819c5c99cc04c000f1d26000e1bad7bcb06940a02916ce2f9ff45d175bac48de8
   languageName: node
   linkType: hard
 
@@ -11462,16 +11396,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"node-fetch@npm:^1.0.1":
-  version: 1.7.3
-  resolution: "node-fetch@npm:1.7.3"
-  dependencies:
-    encoding: ^0.1.11
-    is-stream: ^1.0.1
-  checksum: 3bb0528c05d541316ebe52770d71ee25a6dce334df4231fd55df41a644143e07f068637488c18a5b0c43f05041dbd3346752f9e19b50df50569a802484544d5b
-  languageName: node
-  linkType: hard
-
 "node-fetch@npm:^2.5.0, node-fetch@npm:^2.6.1, node-fetch@npm:^2.6.5":
   version: 2.6.6
   resolution: "node-fetch@npm:2.6.6"
@@ -12312,7 +12236,6 @@ __metadata:
     gatsby-plugin-sharp: ^4.1.0
     gatsby-plugin-sitemap: ^5.1.0
     gatsby-source-filesystem: ^4.1.0
-    gatsby-source-github-api: ^1.0.0
     gatsby-transformer-sharp: ^4.1.0
     postcss: ^8.4.6
     prettier: ^2.4.1
@@ -12321,6 +12244,7 @@ __metadata:
     react-dom: ^17.0.2
     react-helmet: ^6.1.0
     rooks: ^5.7.3
+    swr: ^1.2.1
     tailwindcss: ^3.0.22
   languageName: unknown
   linkType: soft
@@ -15005,6 +14929,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"swr@npm:^1.2.1":
+  version: 1.2.1
+  resolution: "swr@npm:1.2.1"
+  peerDependencies:
+    react: ^16.11.0 || ^17.0.0 || ^18.0.0
+  checksum: 87f6093f468dc76f31d7dc7bdd8f925cd9d8a8e8062eecaf6e17ba4ffeb4d5aebe01e73e0cf30ef0e913121f630c33e393eeff8aab6e5479cb3291cd7f2d7dca
+  languageName: node
+  linkType: hard
+
 "symbol-observable@npm:^1.0.4, symbol-observable@npm:^1.2.0":
   version: 1.2.0
   resolution: "symbol-observable@npm:1.2.0"
@@ -15444,13 +15377,6 @@ __metadata:
   dependencies:
     prelude-ls: ^1.2.1
   checksum: ec688ebfc9c45d0c30412e41ca9c0cdbd704580eb3a9ccf07b9b576094d7b86a012baebc95681999dd38f4f444afd28504cb3a89f2ef16b31d4ab61a0739025a
-  languageName: node
-  linkType: hard
-
-"type-detect@npm:0.1.1":
-  version: 0.1.1
-  resolution: "type-detect@npm:0.1.1"
-  checksum: 3660c29269d15d4cb7d8a6ed26b1cf8cb5789ec9b8ca78c99aef642a83794aba662c57d303e2eb0c2910af57de00db8f38dba8bd7bce13d30c49b0b5fa6b7bde
   languageName: node
   linkType: hard
 
@@ -15937,7 +15863,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"uuid@npm:3.4.0, uuid@npm:^3.0.0, uuid@npm:^3.1.0":
+"uuid@npm:3.4.0, uuid@npm:^3.0.0":
   version: 3.4.0
   resolution: "uuid@npm:3.4.0"
   bin:
@@ -16175,13 +16101,6 @@ __metadata:
   bin:
     webpack: bin/webpack.js
   checksum: 85d9bc7e9b4a0d59420831b1cffaed771818a7abbff3e25215246df6c5abe7806eeee8ca28b15f2dd3b34f64b05586dc138a3b181ce99d1887370301c4ce7e2e
-  languageName: node
-  linkType: hard
-
-"whatwg-fetch@npm:>=0.10.0":
-  version: 3.6.2
-  resolution: "whatwg-fetch@npm:3.6.2"
-  checksum: ee976b7249e7791edb0d0a62cd806b29006ad7ec3a3d89145921ad8c00a3a67e4be8f3fb3ec6bc7b58498724fd568d11aeeeea1f7827e7e1e5eae6c8a275afed
   languageName: node
   linkType: hard
 

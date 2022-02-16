@@ -1,6 +1,6 @@
 import * as React from "react";
-import Contacts from "../contacts";
-import ExternalLink from "../external-link";
+import Contacts from "../common/contacts";
+import ExternalLink from "../common/external-link";
 
 export default function Footer() {
   return (
