@@ -1,23 +1,21 @@
-import { GatsbyFunctionRequest, GatsbyFunctionResponse } from "gatsby";
+import fetch from 'node-fetch';
+import { GatsbyFunctionRequest, GatsbyFunctionResponse } from 'gatsby';
 
-export default async function handler(
-  req: GatsbyFunctionRequest,
-  res: GatsbyFunctionResponse
-) {
-  const url = "https://api.github.com/graphql";
+export default async function handler(_: GatsbyFunctionRequest, res: GatsbyFunctionResponse) {
+  const url = 'https://api.github.com/graphql';
 
   const headers = {
-    "Content-Type": "application/json",
+    'Content-Type': 'application/json',
     Authorization: `Bearer ${process.env.GITHUB_GRAPHQL_TOKEN}`,
   };
 
   try {
     res.json(
       await fetch(url, {
-        method: "POST",
+        method: 'POST',
         headers: headers,
         body: JSON.stringify({ query: gql }),
-      }).then((res) => res.json())
+      }).then(res => res.json())
     );
   } catch (error) {
     res.status(500).send(error);
