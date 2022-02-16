@@ -29,7 +29,7 @@ export default function HeroScrollDownIndicator() {
   return (
     <FontAwesomeIcon
       icon={faChevronDown}
-      className={`absolute bottom-0 mx-auto block h-5 transform-gpu transition-all duration-300 ${
+      className={`absolute bottom-0 mx-auto block h-6 transform-gpu transition-all duration-300 ${
         showScrollDownIndicator ? 'translate-y-0 opacity-100' : '-translate-y-16 opacity-0'
       }`}
       size="2x"
