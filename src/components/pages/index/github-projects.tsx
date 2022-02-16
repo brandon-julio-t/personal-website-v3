@@ -33,7 +33,12 @@ const GithubProjects: React.FunctionComponent = () => {
   return (
     <>
       <section>
-        <h2 className="text-center text-5xl">GitHub Projects</h2>
+        <h2
+          className="text-5xlCannot find name 'OffscreenCanvasRenderingContext2D'.ts(2304) text-center
+"
+        >
+          GitHub Projects
+        </h2>
 
         {error ? (
           <Card className="mx-auto my-8 max-w-screen-md">

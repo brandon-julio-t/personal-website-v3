@@ -1,17 +1,21 @@
-import * as React from "react";
+import * as React from 'react';
 
-import Contacts from "../../common/contacts";
-import HeroScrollDownIndicator from "./hero-scroll-down-indicator";
+import Contacts from '../../common/contacts';
+import HeroScrollDownIndicator from './hero-scroll-down-indicator';
 
 export default function Hero() {
   return (
     <header className="relative flex h-screen flex-col items-center justify-center space-y-8 text-center">
       <h1 className="text-6xl">
-        Brandon Julio Thenaro
+        <span className="bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent">
+          Brandon Julio Thenaro
+        </span>
         <br />
         <small>A.K.A.</small>
         <br />
-        <span title="T088">BR20-2</span>
+        <span className="bg-gradient-to-r from-blue-500 to-cyan-500 bg-clip-text text-transparent" title="T088">
+          BR20-2
+        </span>
       </h1>
 
       <h2 className="text-2xl">
