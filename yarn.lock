@@ -7540,16 +7540,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-postcss@npm:^5.1.0":
-  version: 5.1.0
-  resolution: "gatsby-plugin-postcss@npm:5.1.0"
+"gatsby-plugin-postcss@npm:^5.7.0":
+  version: 5.7.0
+  resolution: "gatsby-plugin-postcss@npm:5.7.0"
   dependencies:
     "@babel/runtime": ^7.15.4
     postcss-loader: ^4.3.0
   peerDependencies:
     gatsby: ^4.0.0-next
     postcss: ^8.0.5
-  checksum: dceb07d4d408e79e3b99f968ca3161aee3a548a36cf5b5844c02552bffc32001f082034d988b6fc712f7f07444282fda8f78a319351831c33c0d9feb7e904033
+  checksum: 8ec4826a05c879ee690a58b42bffe825757d06120eb3bb603b32e06a4f9e6610bbe2a9d6d80fc007c7048f1d34cfa2118aaa408f94cf4a57cfdfefd2fd8feb9d
   languageName: node
   linkType: hard
 
@@ -12307,7 +12307,7 @@ __metadata:
     gatsby-plugin-layout: ^3.1.0
     gatsby-plugin-manifest: ^4.1.0
     gatsby-plugin-offline: ^5.1.0
-    gatsby-plugin-postcss: ^5.1.0
+    gatsby-plugin-postcss: ^5.7.0
     gatsby-plugin-react-helmet: ^5.1.0
     gatsby-plugin-sharp: ^4.1.0
     gatsby-plugin-sitemap: ^5.1.0

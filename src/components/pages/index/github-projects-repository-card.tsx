@@ -14,7 +14,6 @@ export default function GithubProjectsRepositoryCard(props) {
       .split("-")
       .map((word) => word[0].toUpperCase() + word.substring(1).toLowerCase())
       .join(" ");
-  y;
 
   const toReadableDate = (dateString: string): string =>
     new Intl.DateTimeFormat([], {
