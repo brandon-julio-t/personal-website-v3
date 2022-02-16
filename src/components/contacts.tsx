@@ -8,7 +8,7 @@ import {
   faInstagram,
   faLinkedin,
   faTwitter,
-} from "@fortawesome/free-brands-svg-icons";
+} from "@fortawesome/free-brands-svg-icons";ins
 
 import ExternalLink from "./external-link";
 
