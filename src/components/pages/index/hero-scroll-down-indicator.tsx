@@ -1,8 +1,8 @@
-import * as React from 'react';
-import { useEffect, useState } from 'react';
-import { useOnWindowScroll, useTimeout } from 'rooks';
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import * as React from "react";
+import { useEffect, useState } from "react";
+import { useOnWindowScroll, useTimeout } from "rooks";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function HeroScrollDownIndicator() {
   const showScrollDownIndicatorTimeout = 3500;
@@ -18,7 +18,7 @@ export default function HeroScrollDownIndicator() {
     return () => clear();
   }, []);
 
-  if (typeof window !== 'undefined') {
+  if (typeof window !== "undefined") {
     useOnWindowScroll(() => {
       setHasScrolled(true);
       setShowScrollDownIndicator(false);
@@ -30,7 +30,9 @@ export default function HeroScrollDownIndicator() {
     <FontAwesomeIcon
       icon={faChevronDown}
       className={`absolute bottom-0 mx-auto block h-6 transform-gpu transition-all duration-300 ${
-        showScrollDownIndicator ? 'translate-y-0 opacity-100' : '-translate-y-16 opacity-0'
+        showScrollDownIndicator
+          ? "translate-y-0 opacity-100"
+          : "-translate-y-16 opacity-0"
       }`}
       size="2x"
     />

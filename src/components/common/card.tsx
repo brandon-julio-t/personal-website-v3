@@ -1,6 +1,10 @@
-import React, { ComponentProps, FunctionComponent } from 'react';
+import React, { ComponentProps, FunctionComponent } from "react";
 
-const Card: FunctionComponent<ComponentProps<'div'>> = ({ className, children, ...rest }) => {
+const Card: FunctionComponent<ComponentProps<"div">> = ({
+  className,
+  children,
+  ...rest
+}) => {
   return (
     <div
       {...rest}
