@@ -19,7 +19,7 @@ export default function Footer() {
           </ExternalLink>
         </p>
 
-        <section className="grid grid-cols-1 gap-4 md:grid-cols-2">
+        <section className="mx-auto grid w-full max-w-lg grid-cols-1 gap-4 md:grid-cols-2">
           <div className="grid grid-cols-1">
             <h2 className="text-lg font-medium">Built with</h2>
             <ExternalLink href="https://www.gatsbyjs.com/" aria-label="Gatsby" underline>
