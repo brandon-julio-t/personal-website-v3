@@ -1,12 +1,14 @@
-import * as React from "react";
-import { StaticImage } from "gatsby-plugin-image";
+import * as React from 'react';
+import { StaticImage } from 'gatsby-plugin-image';
 
-import ExternalLink from "../../common/external-link";
+import ExternalLink from '../../common/external-link';
 
 export default function WorkExperience() {
   return (
     <section>
-      <h2 className="text-center text-5xl">Work Experience</h2>
+      <h2 className="text-center text-5xl">
+        Work Experience
+      </h2>
 
       <section className="my-8 mx-auto flex max-w-screen-md flex-col justify-center space-y-8">
         <h3 className="text-center text-4xl">
