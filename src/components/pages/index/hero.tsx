@@ -1,7 +1,7 @@
-import * as React from 'react';
+import * as React from "react";
 
-import Contacts from '../../common/contacts';
-import HeroScrollDownIndicator from './hero-scroll-down-indicator';
+import Contacts from "../../common/contacts";
+import HeroScrollDownIndicator from "./hero-scroll-down-indicator";
 
 export default function Hero() {
   return (
@@ -13,7 +13,10 @@ export default function Hero() {
         <br />
         <small>A.K.A.</small>
         <br />
-        <span className="bg-gradient-to-r from-purple-500 to-indigo-500 bg-clip-text text-transparent" title="T088">
+        <span
+          className="bg-gradient-to-r from-purple-500 to-indigo-500 bg-clip-text text-transparent"
+          title="T088"
+        >
           BR20-2
         </span>
       </h1>
