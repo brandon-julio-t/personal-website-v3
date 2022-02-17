@@ -7430,6 +7430,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"gatsby-plugin-fontawesome-css@npm:^1.2.0":
+  version: 1.2.0
+  resolution: "gatsby-plugin-fontawesome-css@npm:1.2.0"
+  peerDependencies:
+    "@fortawesome/fontawesome-svg-core": ^1.2.0
+    gatsby: ^4.0.0
+  checksum: c0419d163f48d233d77150a9cc2af9b5a1d966b6fb14a752030cb6d1c2b1498fa78b264cebd1b93ff87354b5fb79de2d73ad0b36e00f85e425db5917dcea3b77
+  languageName: node
+  linkType: hard
+
 "gatsby-plugin-google-analytics@npm:^4.1.0":
   version: 4.1.0
   resolution: "gatsby-plugin-google-analytics@npm:4.1.0"
@@ -12270,6 +12280,7 @@ __metadata:
     autoprefixer: ^10.4.2
     gatsby: ^4.1.1
     gatsby-image: ^3.11.0
+    gatsby-plugin-fontawesome-css: ^1.2.0
     gatsby-plugin-google-analytics: ^4.1.0
     gatsby-plugin-image: ^2.1.0
     gatsby-plugin-layout: ^3.1.0
