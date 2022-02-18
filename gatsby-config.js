@@ -10,7 +10,6 @@ module.exports = {
     siteUrl: `https://brandonjuliothenaro.my.id`,
   },
   plugins: [
-    "gatsby-plugin-advanced-sitemap",
     "gatsby-plugin-fontawesome-css",
     "gatsby-plugin-gatsby-cloud",
     "gatsby-plugin-image",
