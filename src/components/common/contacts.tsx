@@ -1,6 +1,6 @@
-import * as React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faFileAlt } from '@fortawesome/free-solid-svg-icons';
+import * as React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope, faFileAlt } from "@fortawesome/free-solid-svg-icons";
 import {
   faFacebook,
   faFreeCodeCamp,
@@ -8,9 +8,9 @@ import {
   faInstagram,
   faLinkedin,
   faTwitter,
-} from '@fortawesome/free-brands-svg-icons';
+} from "@fortawesome/free-brands-svg-icons";
 
-import ExternalLink from './external-link';
+import ExternalLink from "./external-link";
 
 export default function Contacts() {
   return (
