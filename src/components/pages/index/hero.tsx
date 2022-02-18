@@ -7,11 +7,14 @@ export default function Hero() {
   return (
     <header className="relative flex h-screen flex-col items-center justify-center space-y-8 text-center">
       <h1 className="text-6xl">
-        <span className="bg-gradient-to-r from-indigo-500 to-purple-500 bg-clip-text text-transparent">
+        <span className="bg-gradient-to-r from-indigo-500 to-purple-500 box-decoration-clone bg-clip-text text-transparent">
           Brandon Julio Thenaro
         </span>
         <br />
-        <span className="bg-gradient-to-r from-purple-500 to-indigo-500 bg-clip-text text-transparent" title="T088">
+        <span
+          className="bg-gradient-to-r from-purple-500 to-indigo-500 box-decoration-clone bg-clip-text text-transparent"
+          title="T088"
+        >
           BR20-2
         </span>
       </h1>

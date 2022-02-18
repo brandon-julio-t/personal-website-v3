@@ -8,7 +8,7 @@ export default function Certificate() {
     <section>
       <h2 className="mb-4 text-center text-5xl">Certificates</h2>
 
-      <div className="columns-3 gap-4 space-y-4">
+      <div className="sm:columns-2 md:columns-3 columns-1 gap-4 space-y-4">
         {certificates.map(certificate => (
           <div key={certificate.url} className="overflow-hidden rounded-lg shadow transition hover:shadow-md">
             <ExternalLink href={certificate.url} aria-label={certificate.label}>
