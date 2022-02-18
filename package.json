@@ -25,6 +25,7 @@
     "autoprefixer": "^10.4.2",
     "gatsby": "^4.1.1",
     "gatsby-image": "^3.11.0",
+    "gatsby-plugin-advanced-sitemap": "^2.0.0",
     "gatsby-plugin-fontawesome-css": "^1.2.0",
     "gatsby-plugin-gatsby-cloud": "^4.7.0",
     "gatsby-plugin-google-analytics": "^4.1.0",

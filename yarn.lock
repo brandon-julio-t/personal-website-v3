@@ -1412,6 +1412,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/runtime@npm:7.14.0":
+  version: 7.14.0
+  resolution: "@babel/runtime@npm:7.14.0"
+  dependencies:
+    regenerator-runtime: ^0.13.4
+  checksum: 257dc2594355dd8798455f25b6f2f9a00f162b427391265752933e0e3337b3b14661d09283187d5039ae3764f723890ffe767e995c73d662f1d515bdf48e5ade
+  languageName: node
+  linkType: hard
+
 "@babel/runtime@npm:^7.10.0, @babel/runtime@npm:^7.10.2, @babel/runtime@npm:^7.11.2, @babel/runtime@npm:^7.14.6, @babel/runtime@npm:^7.15.4, @babel/runtime@npm:^7.3.4, @babel/runtime@npm:^7.7.2, @babel/runtime@npm:^7.8.4":
   version: 7.16.0
   resolution: "@babel/runtime@npm:7.16.0"
@@ -7288,7 +7297,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fs-extra@npm:^10.0.0":
+"fs-extra@npm:10.0.0, fs-extra@npm:^10.0.0":
   version: 10.0.0
   resolution: "fs-extra@npm:10.0.0"
   dependencies:
@@ -7524,6 +7533,21 @@ __metadata:
     lodash: ^4.17.21
     micromatch: ^4.0.4
   checksum: cb0b09f2d7ea90b605b37196c7e67ba8fbdcdff21513aa01de2b02ce8dfeb026f9e71e2312cd36aba122e3210f517a16e65f253ab750a2211d18ece9c5e140db
+  languageName: node
+  linkType: hard
+
+"gatsby-plugin-advanced-sitemap@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "gatsby-plugin-advanced-sitemap@npm:2.0.0"
+  dependencies:
+    "@babel/runtime": 7.14.0
+    fs-extra: 10.0.0
+    lodash: 4.17.21
+    moment: 2.29.1
+    xml: ^1.0.1
+  peerDependencies:
+    gatsby: ^3.0.0
+  checksum: 59d1cc2507e0adb205ff31c4b70266c80cb4e0eb898076963797f5b7ac05e0135a66d38d6c19dac55b8e838e2bb26bc355b5ec9416c74e446a4572b4f9135a40
   languageName: node
   linkType: hard
 
@@ -11481,7 +11505,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"moment@npm:^2.29.1":
+"moment@npm:2.29.1, moment@npm:^2.29.1":
   version: 2.29.1
   resolution: "moment@npm:2.29.1"
   checksum: 1e14d5f422a2687996be11dd2d50c8de3bd577c4a4ca79ba5d02c397242a933e5b941655de6c8cb90ac18f01cc4127e55b4a12ae3c527a6c0a274e455979345e
@@ -12609,6 +12633,7 @@ __metadata:
     autoprefixer: ^10.4.2
     gatsby: ^4.1.1
     gatsby-image: ^3.11.0
+    gatsby-plugin-advanced-sitemap: ^2.0.0
     gatsby-plugin-fontawesome-css: ^1.2.0
     gatsby-plugin-gatsby-cloud: ^4.7.0
     gatsby-plugin-google-analytics: ^4.1.0
@@ -16997,6 +17022,13 @@ __metadata:
     sax: ">=0.6.0"
     xmlbuilder: ~11.0.0
   checksum: ca0cf2dfbf6deeaae878a891c8fbc0db6fd04398087084edf143cdc83d0509ad0fe199b890f62f39c4415cf60268a27a6aed0d343f0658f8779bd7add690fa98
+  languageName: node
+  linkType: hard
+
+"xml@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "xml@npm:1.0.1"
+  checksum: 11b5545ef3f8fec3fa29ce251f50ad7b6c97c103ed4d851306ec23366f5fa4699dd6a942262df52313a0cd1840ab26256da253c023bad3309d8ce46fe6020ca0
   languageName: node
   linkType: hard
 
