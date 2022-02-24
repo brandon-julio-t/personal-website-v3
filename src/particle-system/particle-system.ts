@@ -1,7 +1,7 @@
-import Particle from "./particle";
-import { hexToRgb, randomHexColor, randomIntegerBetween } from "./utilities";
-import Vector from "./vector";
-import Coordinate from "./coordinate";
+import Particle from './particle';
+import { hexToRgb, randomHexColor, randomIntegerBetween } from './utilities';
+import Vector from './vector';
+import Coordinate from './coordinate';
 
 export default class ParticleSystem {
   public static readonly MIN_LINK_DISTANCE: number = 175;
@@ -28,9 +28,9 @@ export default class ParticleSystem {
     const { width, height } = canvas;
 
     if (canvas.transferControlToOffscreen) {
-      this.ctx = canvas.transferControlToOffscreen().getContext("2d");
+      this.ctx = canvas.transferControlToOffscreen().getContext('2d');
     } else {
-      this.ctx = canvas.getContext("2d");
+      this.ctx = canvas.getContext('2d');
     }
 
     this.PARTICLES_COUNT = (width / height) * (Math.max(width, height) / 50);

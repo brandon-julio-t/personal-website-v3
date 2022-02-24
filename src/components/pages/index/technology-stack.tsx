@@ -17,8 +17,8 @@ export default function TechnologyStack() {
   }, [controls, inView]);
 
   return (
-    <section className="mx-auto max-w-screen-lg">
-      <h2 className="text-center text-5xl">Technology Stack</h2>
+    <section className='mx-auto max-w-screen-lg'>
+      <h2 className='text-center text-5xl'>Technology Stack</h2>
 
       <motion.div
         ref={ref}
@@ -31,9 +31,9 @@ export default function TechnologyStack() {
             },
           },
         }}
-        initial="hidden"
+        initial='hidden'
         animate={controls}
-        className="my-8 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3"
+        className='my-8 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3'
       >
         <TechnologyStackFrontEnd />
         <TechnologyStackBackEnd />

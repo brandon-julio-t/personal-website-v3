@@ -1,6 +1,6 @@
-import * as React from "react";
-import { useEffect, useRef } from "react";
-import ParticleSystem from "../../particle-system/particle-system";
+import * as React from 'react';
+import { useEffect, useRef } from 'react';
+import ParticleSystem from '../../particle-system/particle-system';
 
 export default function ParticleSystemCanvas() {
   const particleCanvas = useRef<HTMLCanvasElement>(null);
@@ -15,7 +15,7 @@ export default function ParticleSystemCanvas() {
     <canvas
       ref={particleCanvas}
       style={{ zIndex: -1 }}
-      className="fixed h-screen w-screen opacity-30"
+      className='fixed h-screen w-screen opacity-30'
     />
   );
 }

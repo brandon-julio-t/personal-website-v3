@@ -1,4 +1,4 @@
-require("dotenv").config({
+require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
 });
 
@@ -10,36 +10,36 @@ module.exports = {
     siteUrl: `https://brandonjuliothenaro.my.id`,
   },
   plugins: [
-    "gatsby-plugin-fontawesome-css",
-    "gatsby-plugin-gatsby-cloud",
-    "gatsby-plugin-loadable-components-ssr",
-    "gatsby-plugin-image",
-    "gatsby-plugin-offline",
-    "gatsby-plugin-postcss",
-    "gatsby-plugin-react-helmet",
-    "gatsby-plugin-robots-txt",
-    "gatsby-plugin-sharp",
-    "gatsby-plugin-sitemap",
-    "gatsby-transformer-sharp",
+    'gatsby-plugin-fontawesome-css',
+    'gatsby-plugin-gatsby-cloud',
+    'gatsby-plugin-loadable-components-ssr',
+    'gatsby-plugin-image',
+    'gatsby-plugin-offline',
+    'gatsby-plugin-postcss',
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-robots-txt',
+    'gatsby-plugin-sharp',
+    'gatsby-plugin-sitemap',
+    'gatsby-transformer-sharp',
     {
-      resolve: "gatsby-plugin-google-analytics",
+      resolve: 'gatsby-plugin-google-analytics',
       options: {
-        trackingId: "UA-142762819-1",
+        trackingId: 'UA-142762819-1',
       },
     },
     {
-      resolve: "gatsby-plugin-manifest",
+      resolve: 'gatsby-plugin-manifest',
       options: {
-        icon: "src/images/icon.jpg",
+        icon: 'src/images/icon.jpg',
       },
     },
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: "images",
-        path: "./src/images/",
+        name: 'images',
+        path: './src/images/',
       },
-      __key: "images",
+      __key: 'images',
     },
     {
       resolve: `gatsby-plugin-layout`,

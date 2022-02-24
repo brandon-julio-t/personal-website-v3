@@ -1,6 +1,6 @@
-import React, { ComponentProps, FunctionComponent } from "react";
+import React, { ComponentProps, FunctionComponent } from 'react';
 
-const Skeleton: FunctionComponent<ComponentProps<"div">> = ({
+const Skeleton: FunctionComponent<ComponentProps<'div'>> = ({
   className,
   ...rest
 }) => {

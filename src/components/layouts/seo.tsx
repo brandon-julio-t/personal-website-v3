@@ -1,6 +1,6 @@
-import * as React from "react";
-import { Helmet } from "react-helmet";
-import { graphql, useStaticQuery } from "gatsby";
+import * as React from 'react';
+import { Helmet } from 'react-helmet';
+import { graphql, useStaticQuery } from 'gatsby';
 
 interface SEOProps {
   description?: string;
@@ -19,18 +19,18 @@ export default function SEO(props: SEOProps) {
   return (
     <Helmet
       htmlAttributes={{
-        lang: lang ?? "en-US",
+        lang: lang ?? 'en-US',
       }}
-      title={title ?? "Brandon Julio Thenaro"}
+      title={title ?? 'Brandon Julio Thenaro'}
       meta={metas({
         faviconURL,
         meta,
         metaDescription,
         site,
-        title: title ?? "Brandon Julio Thenaro",
+        title: title ?? 'Brandon Julio Thenaro',
       })}
     >
-      <script type="application/ld+json">
+      <script type='application/ld+json'>
         {jsonld({
           faviconURL,
           site,
@@ -105,23 +105,23 @@ function jsonld(args: any) {
   const { faviconURL, site } = args;
 
   return JSON.stringify({
-    "@context": "https://schema.org/",
-    "@type": "Person",
-    name: "Brandon Julio Thenaro",
+    '@context': 'https://schema.org/',
+    '@type': 'Person',
+    name: 'Brandon Julio Thenaro',
     url: site.siteMetadata.siteUrl,
     image: faviconURL,
     sameAs: [
-      "https://www.facebook.com/profile.php?id=100008724798107",
-      "https://twitter.com/brandon_julio_t",
-      "https://www.instagram.com/brandon.julio.t",
-      "https://www.linkedin.com/in/brandonjuliothenaro",
-      "https://github.com/brandon-julio-t",
-      "https://www.brandonjuliothenaro.my.id/",
+      'https://www.facebook.com/profile.php?id=100008724798107',
+      'https://twitter.com/brandon_julio_t',
+      'https://www.instagram.com/brandon.julio.t',
+      'https://www.linkedin.com/in/brandonjuliothenaro',
+      'https://github.com/brandon-julio-t',
+      'https://brandonjuliothenaro.my.id/',
     ],
-    jobTitle: "Student",
+    jobTitle: 'Student',
     worksFor: {
-      "@type": "Organization",
-      name: "BINUS University",
+      '@type': 'Organization',
+      name: 'BINUS University',
     },
   });
 }

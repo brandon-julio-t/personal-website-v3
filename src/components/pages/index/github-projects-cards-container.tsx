@@ -17,18 +17,18 @@ const GithubProjectsCardsContainer: FunctionComponent<{
   }, [controls, inView]);
   return (
     <>
-      <h3 className="mt-8 mb-4 text-center text-3xl">{title}</h3>
+      <h3 className='mt-8 mb-4 text-center text-3xl'>{title}</h3>
       <motion.div
         ref={ref}
         variants={container}
-        initial="hidden"
+        initial='hidden'
         animate={controls}
-        className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3"
+        className='grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3'
       >
         {isLoading
           ? Array.from({ length: 6 }).map((_, idx) => (
               <motion.div key={idx} variants={item}>
-                <Skeleton className="mx-auto h-32 w-full" />
+                <Skeleton className='mx-auto h-32 w-full' />
               </motion.div>
             ))
           : repositories.map((repository, idx) => (

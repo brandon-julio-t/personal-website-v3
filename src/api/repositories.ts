@@ -1,7 +1,10 @@
 import fetch from 'node-fetch';
 import { GatsbyFunctionRequest, GatsbyFunctionResponse } from 'gatsby';
 
-export default async function handler(_: GatsbyFunctionRequest, res: GatsbyFunctionResponse) {
+export default async function handler(
+  _: GatsbyFunctionRequest,
+  res: GatsbyFunctionResponse
+) {
   const url = 'https://api.github.com/graphql';
 
   const headers = {

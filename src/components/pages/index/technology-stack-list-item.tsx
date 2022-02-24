@@ -1,12 +1,9 @@
 import { motion } from 'framer-motion';
 import * as React from 'react';
-import { useState } from 'react';
 
-const TechnologyStackListItem: React.FunctionComponent<React.HTMLAttributes<HTMLLIElement>> = ({
-  children,
-  ...rest
-}) => {
-  const [hover, setHover] = useState(false);
+const TechnologyStackListItem: React.FunctionComponent<
+  React.HTMLAttributes<HTMLLIElement>
+> = ({ children, ...rest }) => {
   return (
     <li {...rest}>
       <motion.div
@@ -17,25 +14,10 @@ const TechnologyStackListItem: React.FunctionComponent<React.HTMLAttributes<HTML
             opacity: 1,
           },
         }}
-        onMouseEnter={() => setHover(true)}
-        onMouseLeave={() => setHover(false)}
-        className="group flex transform-gpu items-center justify-center space-x-1 text-lg transition duration-75 ease-in-out hover:scale-150"
+        whileHover={{ scale: 1.25 }}
+        className='flex items-center justify-center space-x-1 text-lg'
       >
-        <span
-          className={`transform-gpu opacity-0 transition-all duration-150 ease-in-out group-hover:opacity-50 ${
-            hover ? `translate-x-0` : `-translate-x-4`
-          }`}
-        >
-          &gt;
-        </span>
         {children}
-        <span
-          className={`transform-gpu opacity-0 transition-all duration-150 ease-in-out group-hover:opacity-50 ${
-            hover ? `translate-x-0` : `translate-x-4`
-          }`}
-        >
-          &lt;
-        </span>
       </motion.div>
     </li>
   );
