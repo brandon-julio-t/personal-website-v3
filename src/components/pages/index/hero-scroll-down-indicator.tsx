@@ -1,28 +1,24 @@
-import * as React from 'react';
-import { useEffect, useState } from 'react';
-import { useOnWindowScroll, useTimeout } from 'rooks';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import * as React from 'react';
+import { useState } from 'react';
+import { useOnWindowScroll, useTimeoutWhen } from 'rooks';
 
 export default function HeroScrollDownIndicator() {
   const showScrollDownIndicatorTimeout = 3500;
   const [showScrollDownIndicator, setShowScrollDownIndicator] = useState(false);
   const [hasScrolled, setHasScrolled] = useState(false);
 
-  const { start, clear } = useTimeout(() => {
-    setShowScrollDownIndicator(true);
-  }, showScrollDownIndicatorTimeout);
-
-  useEffect(() => {
-    start();
-    return () => clear();
-  }, []);
+  useTimeoutWhen(
+    () => setShowScrollDownIndicator(true),
+    showScrollDownIndicatorTimeout,
+    !hasScrolled
+  );
 
   if (typeof window !== 'undefined') {
     useOnWindowScroll(() => {
       setHasScrolled(true);
       setShowScrollDownIndicator(false);
-      clear();
     }, !hasScrolled);
   }
 

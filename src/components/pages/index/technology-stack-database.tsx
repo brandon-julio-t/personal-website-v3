@@ -365,9 +365,9 @@ export default function TechnologyStackDatabase() {
                   y2='94.439%'
                   id='a'
                 >
-                  <stop stop-color='#97D9F6' offset='0%' />
-                  <stop stop-color='#0F80CC' offset='92.024%' />
-                  <stop stop-color='#0F80CC' offset='100%' />
+                  <stop stopColor='#97D9F6' offset='0%' />
+                  <stop stopColor='#0F80CC' offset='92.024%' />
+                  <stop stopColor='#0F80CC' offset='100%' />
                 </linearGradient>
               </defs>
               <path
