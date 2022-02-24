@@ -28,7 +28,7 @@ const GithubProjectsCardsContainer: FunctionComponent<{
         {isLoading
           ? Array.from({ length: 6 }).map((_, idx) => (
               <motion.div key={idx} variants={item}>
-                <Skeleton className='mx-auto h-32 w-full' />
+                <Skeleton className='mx-auto h-48 w-full' />
               </motion.div>
             ))
           : repositories.map((repository, idx) => (
