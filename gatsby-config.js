@@ -12,6 +12,7 @@ module.exports = {
   plugins: [
     "gatsby-plugin-fontawesome-css",
     "gatsby-plugin-gatsby-cloud",
+    "gatsby-plugin-loadable-components-ssr",
     "gatsby-plugin-image",
     "gatsby-plugin-offline",
     "gatsby-plugin-postcss",

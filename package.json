@@ -22,7 +22,9 @@
     "@fortawesome/free-regular-svg-icons": "^5.15.4",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.1.16",
+    "@loadable/component": "^5.15.2",
     "autoprefixer": "^10.4.2",
+    "framer-motion": "^6.2.8",
     "gatsby": "^4.1.1",
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-fontawesome-css": "^1.2.0",
@@ -30,6 +32,7 @@
     "gatsby-plugin-google-analytics": "^4.1.0",
     "gatsby-plugin-image": "^2.1.0",
     "gatsby-plugin-layout": "^3.1.0",
+    "gatsby-plugin-loadable-components-ssr": "^4.2.0",
     "gatsby-plugin-manifest": "^4.1.0",
     "gatsby-plugin-offline": "^5.1.0",
     "gatsby-plugin-postcss": "^5.7.0",
@@ -46,8 +49,12 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-helmet": "^6.1.0",
+    "react-intersection-observer": "^8.33.1",
     "rooks": "^5.7.3",
     "swr": "^1.2.1",
     "tailwindcss": "^3.0.22"
+  },
+  "devDependencies": {
+    "@types/loadable__component": "^5.13.4"
   }
 }
