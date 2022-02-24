@@ -1,6 +1,7 @@
 import loadable from '@loadable/component';
 import * as React from 'react';
 import Hero from '../components/pages/index/hero';
+
 const GithubProjects = loadable(
   () => import('../components/pages/index/github-projects')
 );

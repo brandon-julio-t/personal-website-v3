@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import TechnologyStackListItem from './technology-stack-list-item';
 
-export function TechnologyStackFrontEnd() {
+export default function TechnologyStackFrontEnd() {
   return (
     <section className='text-center'>
       <h3 className='text-4xl'>Front-end</h3>

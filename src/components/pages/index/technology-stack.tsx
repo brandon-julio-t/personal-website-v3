@@ -1,13 +1,25 @@
+import loadable from '@loadable/component';
 import { motion, useAnimation } from 'framer-motion';
 import * as React from 'react';
 import { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
-import { TechnologyStackBackEnd } from './technology-stack-back-end';
-import TechnologyStackCloud from './technology-stack-cloud';
-import TechnologyStackDatabase from './technology-stack-database';
-import { TechnologyStackFrontEnd } from './technology-stack-front-end';
-import TechnologyStackOthers from './technology-stack-others';
-import TechnologyStackProgramming from './technology-stack-programming';
+
+const TechnologyStackBackEnd = loadable(
+  () => import('./technology-stack-back-end')
+);
+const TechnologyStackCloud = loadable(() => import('./technology-stack-cloud'));
+const TechnologyStackDatabase = loadable(
+  () => import('./technology-stack-database')
+);
+const TechnologyStackFrontEnd = loadable(
+  () => import('./technology-stack-front-end')
+);
+const TechnologyStackOthers = loadable(
+  () => import('./technology-stack-others')
+);
+const TechnologyStackProgramming = loadable(
+  () => import('./technology-stack-programming')
+);
 
 export default function TechnologyStack() {
   const controls = useAnimation();

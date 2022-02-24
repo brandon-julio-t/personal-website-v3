@@ -4,7 +4,7 @@ import { faLaravel } from '@fortawesome/free-brands-svg-icons';
 
 import TechnologyStackListItem from './technology-stack-list-item';
 
-export function TechnologyStackBackEnd() {
+export default function TechnologyStackBackEnd() {
   return (
     <section className='text-center'>
       <h3 className='text-4xl'>Back-end</h3>
