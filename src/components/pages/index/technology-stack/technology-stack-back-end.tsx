@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLaravel } from '@fortawesome/free-brands-svg-icons';
 
 import TechnologyStackListItem from './technology-stack-list-item';
+import { IconProp } from '@fortawesome/fontawesome-svg-core';
 
 export default function TechnologyStackBackEnd() {
   return (
@@ -31,7 +32,7 @@ export default function TechnologyStackBackEnd() {
         </TechnologyStackListItem>
         <TechnologyStackListItem>
           <FontAwesomeIcon
-            icon={faLaravel}
+            icon={faLaravel as IconProp}
             className='h-4 fill-current text-red-600'
           />
           <span>Laravel</span>

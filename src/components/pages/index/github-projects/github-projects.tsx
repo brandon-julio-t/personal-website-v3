@@ -1,7 +1,7 @@
 import * as React from 'react';
 import useSWR, { Fetcher } from 'swr';
-import IRepository from '../../../interfaces/repository';
-import Card from '../../common/card';
+import IRepository from '../../../../interfaces/repository';
+import Card from '../../../common/card';
 import GithubProjectsCardsContainer from './github-projects-cards-container';
 
 interface IData {

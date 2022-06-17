@@ -1,8 +1,8 @@
 import { useInView } from 'react-intersection-observer';
 import { useAnimation, motion } from 'framer-motion';
 import React, { FunctionComponent, useEffect } from 'react';
-import IRepository from '../../../interfaces/repository';
-import Skeleton from '../../common/skeleton';
+import IRepository from '../../../../interfaces/repository';
+import Skeleton from '../../../common/skeleton';
 import GithubProjectsRepositoryCard from './github-projects-repository-card';
 
 const GithubProjectsCardsContainer: FunctionComponent<{

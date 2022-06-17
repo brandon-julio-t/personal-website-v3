@@ -1,5 +1,5 @@
 import * as React from 'react';
-import ILanguage from '../../../interfaces/language';
+import ILanguage from '../../../../interfaces/language';
 
 const GithubProjectsLanguagePill: React.FunctionComponent<
   React.ComponentProps<'div'> & { language: ILanguage }

@@ -1,3 +1,4 @@
+import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import * as React from 'react';
@@ -24,7 +25,7 @@ export default function HeroScrollDownIndicator() {
 
   return (
     <FontAwesomeIcon
-      icon={faChevronDown}
+      icon={faChevronDown as IconProp}
       className={`absolute bottom-0 mx-auto block h-6 transform-gpu transition-all duration-300 ${
         showScrollDownIndicator
           ? 'translate-y-0 opacity-100'

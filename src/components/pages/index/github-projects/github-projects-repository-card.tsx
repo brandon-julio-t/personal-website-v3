@@ -1,10 +1,11 @@
+import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import * as React from 'react';
-import IRepository from '../../../interfaces/repository';
-import Card from '../../common/card';
-import ExternalLink from '../../common/external-link';
+import IRepository from '../../../../interfaces/repository';
+import Card from '../../../common/card';
+import ExternalLink from '../../../common/external-link';
 import GithubProjectsLanguagePill from './github-projects-language-pill';
 
 const GithubProjectsRepositoryCard: React.FunctionComponent<
@@ -43,7 +44,7 @@ const GithubProjectsRepositoryCard: React.FunctionComponent<
           href={repository.url}
           className='flex items-center hover:underline'
         >
-          <FontAwesomeIcon className='mr-1 h-5' icon={faGithub} /> View on
+          <FontAwesomeIcon className='mr-1 h-5' icon={faGithub as IconProp} /> View on
           GitHub
         </ExternalLink>
 
@@ -54,7 +55,7 @@ const GithubProjectsRepositoryCard: React.FunctionComponent<
             href={repository.homepageUrl}
             className='flex items-center hover:underline'
           >
-            <FontAwesomeIcon className='mr-1 h-5' icon={faGlobe} /> View Live
+            <FontAwesomeIcon className='mr-1 h-5' icon={faGlobe as IconProp} /> View Live
           </ExternalLink>
         )}
 

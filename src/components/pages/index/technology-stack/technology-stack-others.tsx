@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMarkdown } from '@fortawesome/free-brands-svg-icons';
 
 import TechnologyStackListItem from './technology-stack-list-item';
+import { IconProp } from '@fortawesome/fontawesome-svg-core';
 
 export default function TechnologyStackOthers() {
   return (
@@ -143,7 +144,7 @@ export default function TechnologyStackOthers() {
           <span>JWT</span>
         </TechnologyStackListItem>
         <TechnologyStackListItem>
-          <FontAwesomeIcon icon={faMarkdown} className='h-5' />
+          <FontAwesomeIcon icon={faMarkdown as IconProp} className='h-5' />
           <span>Markdown</span>
         </TechnologyStackListItem>
         <TechnologyStackListItem>

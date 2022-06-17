@@ -12,6 +12,13 @@ export default function Certificate() {
     if (inView) controls.start('visible');
   }, [controls, inView]);
 
+  function certificatesSortFn(
+    a: typeof certificates[0],
+    b: typeof certificates[0]
+  ) {
+    return b.url.localeCompare(a.url);
+  }
+
   return (
     <section>
       <h2 className='mb-4 text-center text-5xl'>Certificates</h2>
@@ -23,7 +30,7 @@ export default function Certificate() {
         animate={controls}
         className='columns-1 gap-4 space-y-4 sm:columns-2 md:columns-3'
       >
-        {certificates.map((certificate) => (
+        {certificates.sort(certificatesSortFn).map((certificate) => (
           <motion.div
             key={certificate.url}
             variants={item}
@@ -66,7 +73,7 @@ const certificates = [
         alt='APIs and Microservices'
       />
     ),
-    url: 'https://bit.ly/301Cvx8',
+    url: 'https://www.freecodecamp.org/certification/brandon-julio-thenaro/back-end-development-and-apis',
   },
   {
     label: 'Certificate Front End Libraries',
@@ -76,14 +83,14 @@ const certificates = [
         alt='Front End Libraries'
       />
     ),
-    url: 'https://bit.ly/2YTCNpg',
+    url: 'https://www.freecodecamp.org/certification/brandon-julio-thenaro/front-end-development-libraries',
   },
   {
     label: 'Certificate Java Basic',
     component: (
       <StaticImage src='../../../images/Java (Basic).png' alt='Java Basic' />
     ),
-    url: 'https://bit.ly/2YjFn5V',
+    url: 'https://www.hackerrank.com/certificates/db0e67348aaf',
   },
   {
     label: 'Certificate JavaScript Algorithms and Data Structures',
@@ -93,7 +100,7 @@ const certificates = [
         alt='JavaScript Algorithms and Data Structures'
       />
     ),
-    url: 'https://bit.ly/3dA7eFe',
+    url: 'https://www.freecodecamp.org/certification/brandon-julio-thenaro/javascript-algorithms-and-data-structures',
   },
   {
     label: 'Certificate JavaScript Basic',
@@ -103,14 +110,14 @@ const certificates = [
         alt='JavaScript Basic'
       />
     ),
-    url: 'https://bit.ly/2UpwkQ0',
+    url: 'https://www.hackerrank.com/certificates/dbd7ce689a45',
   },
   {
     label: 'Certificate React Basic',
     component: (
       <StaticImage src='../../../images/React (Basic).png' alt='React Basic' />
     ),
-    url: 'https://bit.ly/2MK8kmd',
+    url: 'https://www.hackerrank.com/certificates/c962efa53fc2',
   },
   {
     label: 'Certificate Responsive Web Design',
@@ -120,14 +127,14 @@ const certificates = [
         alt='Responsive Web Design'
       />
     ),
-    url: 'https://bit.ly/35OoTpT',
+    url: 'https://www.freecodecamp.org/certification/brandon-julio-thenaro/responsive-web-design',
   },
   {
     label: 'Certificate Rest API',
     component: (
       <StaticImage src='../../../images/Rest API.png' alt='Rest API' />
     ),
-    url: 'https://bit.ly/2Oh4RMV',
+    url: 'https://www.hackerrank.com/certificates/c8d332eb3414',
   },
   {
     label: 'Certificate Tokopedia START Summit',
@@ -155,5 +162,67 @@ const certificates = [
       />
     ),
     url: '',
+  },
+  {
+    label: 'Information Security',
+    component: (
+      <StaticImage
+        src='../../../images/Information Security.png'
+        alt='Information Security'
+      />
+    ),
+    url: 'https://www.freecodecamp.org/certification/brandon-julio-thenaro/information-security-v7',
+  },
+  {
+    label: 'Quality Assurance',
+    component: (
+      <StaticImage
+        src='../../../images/Quality Assurance.png'
+        alt='Quality Assurance'
+      />
+    ),
+    url: 'https://www.freecodecamp.org/certification/brandon-julio-thenaro/quality-assurance-v7',
+  },
+  {
+    label: 'Data Visualization',
+    component: (
+      <StaticImage
+        src='../../../images/Data Visualization.png'
+        alt='Data Visualization'
+      />
+    ),
+    url: 'https://www.freecodecamp.org/certification/brandon-julio-thenaro/data-visualization',
+  },
+  {
+    label: 'Belajar Dasar-Dasar DevOps',
+    component: (
+      <StaticImage
+        src='../../../images/Belajar Dasar-Dasar DevOps.png'
+        alt='Belajar Dasar-Dasar DevOps'
+      />
+    ),
+    url: 'https://www.dicoding.com/certificates/GRX5LLJO3P0M',
+  },
+  {
+    label: 'Belajar Jaringan Komputer untuk Pemula',
+    component: (
+      <StaticImage
+        src='../../../images/Belajar Jaringan Komputer untuk Pemula.png'
+        alt='Belajar Jaringan Komputer untuk Pemula'
+      />
+    ),
+    url: 'https://www.dicoding.com/certificates/N9ZO7478RZG5',
+  },
+  {
+    label: 'CSS',
+    component: <StaticImage src='../../../images/CSS.png' alt='CSS' />,
+    url: 'https://www.hackerrank.com/certificates/2b870b85fff3',
+  },
+  {
+    label: 'SQL (Basic)',
+    component: (
+      <StaticImage src='../../../images/SQL (Basic).png' alt='SQL (Basic)' />
+    ),
+    url: 'https://www.hackerrank.com/certificates/e950f9fb6fb2',
   },
 ];
