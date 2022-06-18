@@ -41,7 +41,7 @@ export default function WorkExperienceSLC() {
         >
           <ExternalLink href='https://www.instagram.com/slcbinusuniv'>
             <StaticImage
-              src='../../../images/Angkatan.jpg'
+              src='../../../../images/Angkatan.jpg'
               alt='20-2 assistants at Software Laboratory Center'
               className='rounded-3xl'
             />
