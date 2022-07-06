@@ -11,6 +11,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 
 import ExternalLink from './external-link';
+import { IconProp } from '@fortawesome/fontawesome-svg-core';
 
 export default function Contacts() {
   return (
@@ -21,7 +22,7 @@ export default function Contacts() {
         aria-label='Facebook'
         title='Facebook'
       >
-        <FontAwesomeIcon className='h-6' icon={faFacebook} size='2x' />
+        <FontAwesomeIcon className='h-6' icon={faFacebook as IconProp} size='2x' />
       </ExternalLink>
       <ExternalLink
         className='origin-center transform-gpu transition duration-75 ease-in-out hover:scale-150'
@@ -29,7 +30,7 @@ export default function Contacts() {
         aria-label='Instagram'
         title='Instagram'
       >
-        <FontAwesomeIcon className='h-6' icon={faInstagram} size='2x' />
+        <FontAwesomeIcon className='h-6' icon={faInstagram as IconProp} size='2x' />
       </ExternalLink>
       <ExternalLink
         className='origin-center transform-gpu transition duration-75 ease-in-out hover:scale-150'
@@ -37,7 +38,7 @@ export default function Contacts() {
         aria-label='Twitter'
         title='Twitter'
       >
-        <FontAwesomeIcon className='h-6' icon={faTwitter} size='2x' />
+        <FontAwesomeIcon className='h-6' icon={faTwitter as IconProp} size='2x' />
       </ExternalLink>
       <ExternalLink
         className='origin-center transform-gpu transition duration-75 ease-in-out hover:scale-150'
@@ -45,7 +46,7 @@ export default function Contacts() {
         aria-label='GitHub'
         title='GitHub'
       >
-        <FontAwesomeIcon className='h-6' icon={faGithub} size='2x' />
+        <FontAwesomeIcon className='h-6' icon={faGithub as IconProp} size='2x' />
       </ExternalLink>
       <a
         className='origin-center transform-gpu transition duration-75 ease-in-out hover:scale-150'
@@ -53,7 +54,7 @@ export default function Contacts() {
         aria-label='Email'
         title='Email'
       >
-        <FontAwesomeIcon className='h-6' icon={faEnvelope} size='2x' />
+        <FontAwesomeIcon className='h-6' icon={faEnvelope as IconProp} size='2x' />
       </a>
       <ExternalLink
         className='origin-center transform-gpu transition duration-75 ease-in-out hover:scale-150'
@@ -61,7 +62,7 @@ export default function Contacts() {
         aria-label='LinkedIn'
         title='LinkedIn'
       >
-        <FontAwesomeIcon className='h-6' icon={faLinkedin} size='2x' />
+        <FontAwesomeIcon className='h-6' icon={faLinkedin as IconProp} size='2x' />
       </ExternalLink>
       <ExternalLink
         className='origin-center transform-gpu transition duration-75 ease-in-out hover:scale-150'
@@ -69,7 +70,7 @@ export default function Contacts() {
         aria-label='Curriculum Vitae'
         title='Curriculum Vitae'
       >
-        <FontAwesomeIcon className='h-6' icon={faFileAlt} size='2x' />
+        <FontAwesomeIcon className='h-6' icon={faFileAlt as IconProp} size='2x' />
       </ExternalLink>
       <ExternalLink
         className='origin-center transform-gpu transition duration-75 ease-in-out hover:scale-150'
@@ -77,7 +78,7 @@ export default function Contacts() {
         aria-label='freeCodeCamp'
         title='freeCodeCamp'
       >
-        <FontAwesomeIcon className='h-6' icon={faFreeCodeCamp} size='2x' />
+        <FontAwesomeIcon className='h-6' icon={faFreeCodeCamp as IconProp} size='2x' />
       </ExternalLink>
     </section>
   );
