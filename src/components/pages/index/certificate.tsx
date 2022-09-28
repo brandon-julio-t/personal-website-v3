@@ -225,4 +225,54 @@ const certificates = [
     ),
     url: 'https://www.hackerrank.com/certificates/e950f9fb6fb2',
   },
+  {
+    label: 'Menjadi Linux System Administrator',
+    component: (
+      <StaticImage
+        src='../../../images/Menjadi Linux System Administrator.png'
+        alt='Menjadi Linux System Administrator'
+      />
+    ),
+    url: 'https://www.dicoding.com/certificates/JMZVGKR2QZN9',
+  },
+  {
+    label: 'Belajar Implementasi CI/CD',
+    component: (
+      <StaticImage
+        src='../../../images/Belajar Implementasi CI-CD.png'
+        alt='Belajar Implementasi CI/CD'
+      />
+    ),
+    url: 'https://www.dicoding.com/certificates/6RPNDLD29Z2M',
+  },
+  {
+    label: 'AWS Academy Graduate - AWS Academy Cloud Foundations',
+    component: (
+      <StaticImage
+        src='../../../images/AWS Academy Graduate - AWS Academy Cloud Foundations.png'
+        alt='AWS Academy Graduate - AWS Academy Cloud Foundations'
+      />
+    ),
+    url: 'https://www.credly.com/badges/f8244e96-1f16-4c51-b1d5-10e941338303/linked_in_profile',
+  },
+  {
+    label: 'AWS Certified Cloud Practitioner Foundational',
+    component: (
+      <StaticImage
+        src='../../../images/AWS Certified Cloud Practitioner Foundational.png'
+        alt='AWS Certified Cloud Practitioner Foundational'
+      />
+    ),
+    url: 'https://www.credly.com/badges/3da6d8a4-1b45-4027-8fa3-bb5245f3dcfb/linked_in_profile',
+  },
+  {
+    label: 'AWS Certified Cloud Practitioner',
+    component: (
+      <StaticImage
+        src='../../../images/AWS Certified Cloud Practitioner.png'
+        alt='AWS Certified Cloud Practitioner'
+      />
+    ),
+    url: 'https://aw.certmetrics.com/amazon/public/verification.aspx',
+  },
 ];
